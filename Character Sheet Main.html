@@ -1,0 +1,1110 @@
+<!-- Header -->
+<div class="sheet-header">
+    <h2 class="sheet-header-title"><span style="font-size: 18px">FFG STAR WARS ROLEPLAYING GAME</h2>
+    <div class="sheet-header-table">
+        <table>
+            <tr>
+                <td>Version</td>
+                <td>1.0.0</td>
+                <td>built by Inquisitor Tremayne</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Sheet Selector Tabs -->
+<input type="radio" name="attr_pcsheet" class="sheet-tab-character-sheet-main" value="1" checked="checked" />
+<span class="sheet-tab-char-sheet-main-title">Character</span>
+<input type="radio" name="attr_pcsheet" class="sheet-tab-character-sheet-inventory" value="2" />
+<span class="sheet-tab-char-sheet-inv">Inventory</span>
+<input type="radio" name="attr_pcsheet" class="sheet-tab-character-sheet-bio" value="3">
+<span class="sheet-tab-char-sheet-bio">Bio</span>
+<input type="radio" name="attr_pcsheet" class="sheet-tab-character-sheet-settings" value="4">
+<span class="sheet-tab-char-sheet-settings">Settings</span>
+
+<!-- Dice and Destiny Pool Section -->
+
+<!-- Character Info -->
+<div class="sheet-main-character-info">
+	<form class="main-character-info">
+		<h2 class="sheet-char-section-head1"><span style="font-size: 14px">CHARACTER</h2>
+			<div>
+                <table>
+                    <tbody>
+                        <tr>
+        					<td><label>Character Name: </label></td>
+        					<td><input type="text" name="attr_charactername"></td>
+                        </tr>
+                
+	<!-- Species List -->
+                        <tr>
+        					<td><label>Species:</label></td>
+        					<td><select name='attr_species'>
+                                                <option value=""></option>
+                                                <option value="Aleena" data-i18n="aleena">Aleena</option>
+                                                <option value="Anx" data-i18n="anx">Anx</option>
+                                                <option value="Aqualish (Aquala)" data-i18n="aqualisha">Aqualish (Aquala)</option>
+                                                <option value="Aqualish (Quara)" data-i18n="aqualishq">Aqualish (Quara)</option>
+                                                <option value="Aqualish (Ualaq)" data-i18n="aqualishu">Aqualish (Ualaq)</option>
+                                                <option value="Arcona" data-i18n="arcona">Arcona</option>
+                                                <option value="Bardottan" data-i18n="bardottan">Bardottan</option>
+                                                <option value="Besalisk" data-i18n="besalisk">Besalisk</option>
+                                                <option value="Bothan" data-i18n="bothan">Bothan</option>
+                                                <option value="Caamasi" data-i18n="caamasi">Caamasi</option>
+                                                <option value="Cerean" data-i18n="cerean">Cerean</option>
+                                                <option value="Chadra-Fan" data-i18n="chadrafan">Chadra-Fan</option>
+                                                <option value="Chagrian" data-i18n="chagrian">Chagrian</option>
+                                                <option value="Chevin" data-i18n="chevin">Chevin</option>
+                                                <option value="Chiss" data-i18n="chiss">Chiss</option>
+                                                <option value="Corellian Human" data-i18n="correllianhuman">Corellian Human</option>
+                                                <option value="Devaronian" data-i18n="devaronian">Devaronian</option>
+                                                <option value="Drall" data-i18n="drall">Drall</option>
+                                                <option value="Dressellian (Primitive)" data-i18n="dressellianp">Dressellian (Primitive)</option>
+                                                <option value="Dressellian (Non-Primitive)" data-i18n="dresselliannp">Dressellian (Non-Primitive)</option>
+                                                <option value="Droid" data-i18n="droid">Droid</option>
+                                                <option value="Dug" data-i18n="dug">Dug</option>
+                                                <option value="Duros" data-i18n="duros">Duros</option>
+                                                <option value="Falleen" data-i18n="falleen">Falleen</option>
+                                                <option value="Gand (With Lungs)" data-i18n="gandl">Gand (With Lungs)</option>
+                                                <option value="Gand (Without Lungs)" data-i18n="gandnl">Gand (Without Lungs)</option>
+                                                <option value="Gank" data-i18n="gank">Gank</option>
+                                                <option value="Gossam" data-i18n="gossam">Gossam</option>
+                                                <option value="Gotal" data-i18n="gotal">Gotal</option>
+                                                <option value="Gran" data-i18n="gran">Gran</option>
+                                                <option value="Gungan" data-i18n="gungan">Gungan</option>
+                                                <option value="Human" data-i18n="human">Human</option>
+                                                <option value="Hutt" data-i18n="hutt">Hutt</option>
+                                                <option value="Iktotchi" data-i18n="iktochi">Iktotchi</option>
+                                                <option value="Ishi Tib" data-i18n="ishitib">Ishi Tib</option>
+                                                <option value="Ithorian" data-i18n="ithorian">Ithorian</option>
+                                                <option value="Kel Dor" data-i18n="keldor">Kel Dor</option>
+                                                <option value="Klatooinian" data-i18n="klatooinian">Klatooinian</option>
+                                                <option value="Lannik" data-i18n="lannik">Lannik</option>
+                                                <option value="Mirialan" data-i18n="mirialan">Mirialan</option>
+                                                <option value="Mon Calamari" data-i18n="moncalamari">Mon Calamari</option>
+                                                <option value="Mustafarian (Northern)" data-i18n="mustafariann">Mustafarian (Northern)</option>
+                                                <option value="Mustafarian (Southern)" data-i18n="mustafarians">Mustafarian (Southern)</option>
+                                                <option value="Nautolan" data-i18n="nautolan">Nautolan</option>
+                                                <option value="Neimodian" data-i18n="neimodian">Neimodian</option>
+                                                <option value="Nikto (Green)" data-i18n="niktog">Nikto (Green)</option>
+                                                <option value="Nikto (Mountain)" data-i18n="niktom">Nikto (Mountain)</option>
+                                                <option value="Nikto (Pale)" data-i18n="niktop">Nikto (Pale)</option>
+                                                <option value="Nikto (Red)" data-i18n="niktor">Nikto (Red)</option>
+                                                <option value="Nikto (Southern)" data-i18n="niktos">Nikto (Southern)</option>
+                                                <option value="Polis Massan (With Vocal Chords)" data-i18n="polismassanvc">Polis Massan (With Vocal Chords)</option>
+                                                <option value="Polis Massan (Without Vocal Chords)" data-i18n="polismassannvc">Polis Massan (Without Vocal Chords)</option>
+                                                <option value="Quarren" data-i18n="quarren">Quarren</option>
+                                                <option value="Quermian" data-i18n="quermian">Quermian</option>
+                                                <option value="Rodian" data-i18n="rodian">Rodian</option>
+                                                <option value="Sakiyan" data-i18n="sakiyan">Sakiyan</option>
+                                                <option value="Sathari" data-i18n="sathari">Sathari</option>
+                                                <option value="Selonian" data-i18n="selonian">Selonian</option>
+                                                <option value="Sullustan" data-i18n="sullustan">Sullustan</option>
+                                                <option value="Togruta" data-i18n="togruta">Togruta</option>
+                                                <option value="Toydarian" data-i18n="toydarian">Toydarian</option>
+                                                <option value="Trandosian" data-i18n="trandosian">Trandosian</option>
+                                                <option value="Twi'lek" data-i18n="twilek">Twi'lek</option>
+                                                <option value="Verpine" data-i18n="verpine">Verpine</option>
+                                                <option value="Weequay" data-i18n="weekay">Weequay</option>
+                                                <option value="Whiphid" data-i18n="whipid">Whiphid</option>
+                                                <option value="Wookiee" data-i18n="wookie">Wookiee</option>
+                                                <option value="Xexto" data-i18n="xexto">Xexto</option>
+                                                <option value="Zabrak" data-i18n="zabrak">Zabrak</option>
+                            </select></td>
+                        </tr>
+                               
+	<!-- Career List -->
+			            <tr>
+        					<td><label>Career:</label></td>
+        					<td><select name="attr_career-list">
+                                <option value=""></option>
+                                <optgroup label="Edge of the Empire" data-i18n-label="edgeoftheempire">
+                                    <option value="Bounty Hunter" data-i18n="bountyhunter">Bounty Hunter</option>
+                                    <option value="Colonist" data-i18n="colonist">Colonist</option>
+                                    <option value="Explorer" data-i18n="explorer">Explorer</option>
+                                    <option value="Hired Gun" data-i18n="hiredgun">Hired Gun</option>
+                                    <option value="Smuggler" data-i18n="smuggler">Smuggler</option>
+                                    <option value="Technican" data-i18n="technician">Technican</option>
+                                </optgroup>
+                                <optgroup label="Age of Rebellion" data-i18n-label="ageofrebellion">
+                                    <option value="Ace" data-i18n="ace">Ace</option>
+                                    <option value="Commander" data-i18n="commander">Commander</option>
+                                    <option value="Diplomat" data-i18n="diplomat">Diplomat</option>
+                                    <option value="Engineer" data-i18n="engineer">Engineer</option>
+                                    <option value="Soldier" data-i18n="soldier">Soldier</option>
+                                    <option value="Spy" data-i18n="spy">Spy</option>
+                                </optgroup>
+                                <optgroup label="Force and Destiny" data-i18n-label="forceanddestiny">
+                                    <option value="Consular" data-i18n="consular">Consular</option>
+                                    <option value="Guardian" data-i18n="guardian">Guardian</option>
+                                    <option value="Mystic" data-i18n="mystic">Mystic</option>
+                                    <option value="Seeker" data-i18n="seeker">Seeker</option>
+                                    <option value="Sentinel" data-i18n="sentinel">Sentinel</option>
+                                    <option value="Warrior" data-i18n="warrior">Warrior</option>
+                                </optgroup>
+                                <optgroup label="All" data-i18n-label="all">
+                                    <option value="Universal" data-i18n="universal">Universal</option>
+                                </optgroup>
+                            </select></td>
+                        </tr>
+
+	<!-- Specialization List -->
+			            <tr>
+        					<td><label>Specialization: </label></td>
+        					<td><select name="attr_specialization">
+                                <option value=""></option>
+                                <optgroup label="Edge of the Empire" data-i18n-label="edgeoftheempire"></optgroup>
+                                <optgroup label="Bounty Hunter" data-i18n-label="bountyhunter">
+                                    <option value="Assassin" data-i18n="assassin">Assassin</option>
+                                    <option value="Gadgeteer" data-i18n="gadgeteer">Gadgeteer</option>
+                                    <option value="Survivalist" data-i18n="survivalist">Survivalist</option>
+                                </optgroup>
+                                <optgroup label="Colonist" data-i18n-label="colonist">
+                                    <option value="Doctor" data-i18n="doctor">Doctor</option>
+                                    <option value="Politico" data-i18n="politico">Politico</option>
+                                    <option value="Scholar" data-i18n="scholar">Scholar</option>
+                                    <option value="Entrepreneur" data-i18n="entrepreneur">Entrepreneur</option>
+                                    <option value="Marshal" data-i18n="marshal">Marshal</option>
+                                    <option value="Performer" data-i18n="performer">Performer</option>
+                                </optgroup>
+                                <optgroup label="Explorer" data-i18n-label="explorer">
+                                    <option value="Scout" data-i18n="scout">Scout</option>
+                                    <option value="Fringer" data-i18n="fringer">Fringer</option>
+                                    <option value="Driver" data-i18n="driver">Driver</option>
+                                    <option value="Archaeologist" data-i18n="archaeologist">Archaeologist</option>
+                                    <option value="Big-Game Hunter" data-i18n="biggamehunter">Big-Game Hunter</option>
+                                    <option value="Trader" data-i18n="trader">Trader</option>
+                                </optgroup>
+                                <optgroup label="Hired Gun" data-i18n-label="hiredgun">
+                                    <option value="Bodyguard" data-i18n="bodyguard">Bodyguard</option>
+                                    <option value="Demolitionist" data-i18n="demolitionist">Demolitionist</option>
+                                    <option value="Enforcer" data-i18n="enforcer">Enforcer</option>
+                                    <option value="Heavy" data-i18n="heavy">Heavy</option>
+                                    <option value="Marauder" data-i18n="marauder">Marauder</option>
+                                    <option value="Mercenary Soldier" data-i18n="mercenarysoldier">Mercenary Soldier</option>
+                                </optgroup>
+                                <optgroup label="Smuggler" data-i18n-label="smuggler">
+                                    <option value="Pilot" data-i18n="pilot">Pilot</option>
+                                    <option value="Scoundrel" data-i18n="scoundrel">Scoundrel</option>
+                                    <option value="Thief" data-i18n="thief">Thief</option>
+                                    <option value="Charmer" data-i18n="charmer">Charmer</option>
+                                    <option value="Gambler" data-i18n="gambler">Gambler</option>
+                                    <option value="Gunslinger" data-i18n="gunslinger">Gunslinger</option>
+                                </optgroup>
+                                <optgroup label="Technician" data-i18n-label="technician">
+                                    <option value="Mechanic" data-i18n="mechanic">Mechanic</option>
+                                    <option value="Outlaw Tech" data-i18n="outlawtech">Outlaw Tech</option>
+                                    <option value="Slicer" data-i18n="slicer">Slicer</option>
+                                    <option value="Cyber Tech" data-i18n="cybertech">Cyber Tech</option>
+                                    <option value="Droid Tech" data-i18n="droidtech">Droid Tech</option>
+                                    <option value="Modder" data-i18n="modder">Modder</option>
+                                </optgroup>
+                                <optgroup label="Age of Rebellion" data-i18n-label="ageofrebellion"></optgroup>
+                                <optgroup label="Ace" data-i18n-label="ace">
+                                    <option value="Driver" data-i18n="driver">Driver</option>
+                                    <option value="Pilot" data-i18n="pilot">Pilot</option>
+                                    <option value="Gunner" data-i18n="gunner">Gunner</option>
+                                    <option value="Rigger" data-i18n="rigger">Rigger</option>
+                                    <option value="Hotshot" data-i18n="hotshot">Hotshot</option>
+                                    <option value="Beast Rider" data-i18n="beastrider">Beast Rider</option>
+                                </optgroup>
+                                <optgroup label="Commander" data-i18n-label="commander">
+                                    <option value="Commodore" data-i18n-label="commodore">Commodore</option>
+                                    <option value="Squadron Leader" data-i18n="squadronleader">Squadron Leader</option>
+                                    <option value="Tactician" data-i18n="tactician">Tactician</option>
+                                    <option value="Figurehead" data-i18n="figurehead">Figurehead</option>
+                                    <option value="Instructor" data-i18n="instructor">Instructor</option>
+                                    <option value="Strategist" data-i18n="strategist">Strategist</option>
+                                </optgroup>
+                                <optgroup label="Diplomat" data-i18n-label="diplomat">
+                                    <option value="Ambassador" data-i18n="ambassador">Ambassador</option>
+                                    <option value="Agitator" data-i18n="agitator">Agitator</option>
+                                    <option value="Quartermaster" data-i18n="quartermester">Quartermaster</option>
+                                    <option value="Analyst" data-i18n="analyst">Analyst</option>
+                                    <option value="Advocate" data-i18n="advocate">Advocate</option>
+                                    <option value="Propagandist" data-i18n="propagandist">Propagandist</option>
+                                </optgroup>
+                                <optgroup label="Engineer" data-i18n-label="engineer">
+                                    <option value="Mechanic" data-i18n="mechanic">Mechanic</option>
+                                    <option value="Scientist" data-i18n="scientist">Scientist</option>
+                                    <option value="Saboteur" data-i18n="saboteur">Saboteur</option>
+                                </optgroup>
+                                <optgroup label="Soldier" data-i18n-label="soldier">
+                                    <option value="Medic" data-i18n="medic">Medic</option>
+                                    <option value="Sharpshooter" data-i18n="sharpshooter">Sharpshooter</option>
+                                    <option value="Commando" data-i18n="commando">Commando</option>
+                                </optgroup>
+                                <optgroup label="Spy" data-i18n-label="spy">
+                                    <option value="Slicer" data-i18n="slicer">Slicer</option>
+                                    <option value="Infiltrator" data-i18n="infiltrator">Infiltrator</option>
+                                    <option value="Scout" data-i18n="scout">Scout</option>
+                                </optgroup>
+                                <optgroup label="Force and Destiny" data-i18n-label="forceanddestiny"></optgroup>
+                                <optgroup label="Consular" data-i18n-label="consular">
+                                    <option value="Healer" data-i18n="healer">Healer</option>
+                                    <option value="Niman Disciple" data-i18n="nimandisciple">Niman Disciple</option>
+                                    <option value="Sage" data-i18n="sage">Sage</option>
+                                </optgroup>
+                                <optgroup label="Guardian" data-i18n-label="guardian">
+                                    <option value="Armorer" data-i18n="armorer">Armorer</option>
+                                    <option value="Peace Keeper" data-i18n="peacekeeper">Peace Keeper</option>
+                                    <option value="Protector" data-i18n="protector">Protector</option>
+                                    <option value="Soresu Defender" data-i18n="soresudefender">Soresu Defender</option>
+                                    <option value="Warden" data-i18n="warden">Warden</option>
+                                    <option value="Warleader" data-i18n="warleader">Warleader</option>
+                                </optgroup>
+                                <optgroup label="Mystic" data-i18n-label="mystic">
+                                    <option value="Seer" data-i18n="seer">Seer</option>
+                                    <option value="Makashi Duelist" data-i18n="makashiduelist">Makashi Duelist</option>
+                                    <option value="Advisor" data-i18n="advisor">Advisor</option>
+                                </optgroup>
+                                <optgroup label="Seeker" data-i18n-label="seeker">
+                                    <option value="Ataru Striker" data-i18n="atarustriker">Ataru Striker</option>
+                                    <option value="Hunter" data-i18n="hunter">Hunter</option>
+                                    <option value="Pathfinder" data-i18n="pathfinder">Pathfinder</option>
+                                    <option value="Executioner" data-i18n="executioner">Executioner</option>
+                                    <option value="Hermit" data-i18n="hermit">Hermit</option>
+                                    <option value="Navigator" data-i18n="navigator">Navigator</option>
+                                </optgroup>
+                                <optgroup label="Sentinel" data-i18n-label="sentinel">
+                                    <option value="Artisan" data-i18n="artisan">Artisan</option>
+                                    <option value="Shadow" data-i18n="shadow">Shadow</option>
+                                    <option value="Shien Expert" data-i18n="shienexpert">Shien Expert</option>
+                                </optgroup>
+                                <optgroup label="Warrior" data-i18n-label="warrior">
+                                    <option value="Aggressor" data-i18n="aggressor">Aggressor</option>
+                                    <option value="Shii-Cho Knight" data-i18n="shiichoknight">Shii-Cho Knight</option>
+                                    <option value="Starfighter Ace" data-i18n="starfighterace">Starfighter Ace</option>
+                                </optgroup>
+                                <optgroup label="Universal" data-i18n-label="universal">
+                                    <option value="Force Sensitive Exile" data-i18n="forcesensitiveexile">Force Sensitive Exile</option>
+                                    <option value="Force Sensitive Emergent" data-i18n="forcesensitiveemergent">Force Sensitive Emergent</option>
+                                    <option value="Recruit" data-i18n="recruit">Recruit</option>
+                                </optgroup>
+                            </select></td>
+                        </tr>
+                    </tbody>
+                </table>                                   
+			</div>
+	</form>	
+</div>
+
+<!-- Main Stats -->
+<div class="main-stats">
+    <table class="main-stats-table" cellspacing="1" cellpadding=".5" border="1">
+        <tr>
+            <th>SOAK</th>
+            <th colspan="2">WOUNDS</th>
+            <th colspan="2">STRAIN</th>
+            <th colspan="2">DEFENSE</th>
+            <th colspan="2">ENCUMBERANCE</th>
+            <th colspan="2">FORCE</th>
+        </tr>
+        <tbody>
+            <tr>   
+                <td><input name="attr_soak" type="number" max="49" min="0" value="0"></td>
+                <td><input name="attr_wounds_max" type="number" min="0" value="0"></td>
+                <td><input name="attr_wounds" type="number" min="0" value="0"></td>
+                <td><input name="attr_strain_max" type="number" min="0" value="0">                       
+                <td><input name="attr_strain" type="number" min="0" value="0"></td>
+                <td><input name="attr_rangeddefense" type="number" max="4" min="0" value="0"></td>
+                <td><input name="attr_meleedefense" type="number" max="4" min="0" value="0"></td>
+                <td><input name="attr_encumbrance_max" type="number" min="0" value="0"></td>
+                <td><input name="attr_encumbrance" type="number" min="0" value="0"></td>                       
+                <td><input name="attr_forcerating" type="number" max="21" min="0" value="0"></td>
+                <td><input name="attr_forcecommitted" type="number" max="21" min="0" value="0"></td>                       
+            </tr>
+            <tr>
+                <td></td>
+                <td><label class="main-stats-label-threshold">THRESHOLD</label></td>
+                <td><label class="main-stats-label-current">CURRENT</label></td>
+                <td><label class="main-stats-label-threshold">THRESHOLD</label></td>
+                <td><label class="main-stats-label-current">CURRENT</label></td>
+                <td><label class="main-stats-label-ranged">RANGED</label></td>
+                <td><label class="main-stats-label-melee">MELEE</label></td>
+                <td><label class="main-stats-label-threshold">THRESHOLD</label></td>
+                <td><label class="main-stats-label-current">CURRENT</label></td>
+                <td><label class="main-stats-label-threshold">RATING</label></td>
+                <td><label class="main-stats-label-committed">COMMITTED</label></td>
+            </tr>    
+        </tbody>       
+    </table>            
+</div>
+
+<!-- Characteristics -->        
+<div class="characteristics">
+    <h2 class="char-sheet-section-head1">CHARACTERISTICS</h2>
+        <div class="sheet-characteristic-section">
+            <table class="sheet-characteristics" cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                <tr>
+                    <td>
+                        <input type="number" max="7" min="1" value="2" name='attr_brawn'>
+                    </td>
+                    <td>
+                        <input type="number" max="7" min="1" value="2" name='attr_agility'>
+                    </td>
+                    <td>
+                        <input type="number" max="7" min="1" value="2" name='attr_intellect'>
+                    </td>
+                    <td>
+                        <input type="number" max="7" min="1" value="2" name='attr_cunning'>
+                    </td>
+                    <td>
+                        <input type="number" max="7" min="1" value="2" name='attr_willpower'>
+                    </td>
+                    <td>
+                        <input type="number" max="7" min="1" value="2" name='attr_presence'>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>BRAWN</label></td>
+                    <td><label>AGILITY</label></td>
+                    <td><label>INTELLECT</label></td>
+                    <td><label>CUNNING</label></td>
+                    <td><label>WILLPOWER</label></td>
+                    <td><label>PRESENCE</label></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+</div>
+
+<!-- Critical Injuries -->
+<div class="critical-injuries">
+	<h2 class="char-sheet-section-head1">CRITICAL INJURIES</h2>
+		<input class="button-crit-roll" type="submit" value="CRIT ROLL" name=""><!-- this should auto-roll on the crit table also need to add place for modifiers to crit roll -->
+        <input type="text" name="crit-roll-modifier"><!--this should modify the CRIT ROLL button-->
+		<div>
+			<label>SEVERITY</label>
+			<input type="text" name="severity"><!-- this should display the severity from a critical injury roll i.e. easy average hard etc -->
+		</div>
+		<div>
+			<label>RESULT</label>
+			<input type="text" name="severity"><!-- this should display the text result of the specific critical injury rolled -->
+		</div>
+		<input class="button-heal-roll" type="submit" value="RECOVER" name=""><!-- this should auto-remove the crit -->
+</div>
+
+<!-- Initiative -->
+<div class="initiative">
+	<h2 class="char-sheet-section-head1">INITIATIVE</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td><label class="init-cool">COOL (if prepared)</label></td>
+            	<td><input class="roll-icon" type="button" value="" name=""></td><!-- dice icon should be used here to roll initiative.  needs to auto calculate and needs to add the character to the initiative tracker -->
+            	<td><input type="text" name="modifiers"></td><!-- needs to recoginize the dice code for modifiers i.e. 1b for one boost, 2bl for two setback etc --> 
+            </tr>
+            <tr>
+                <td><label class="init-vigilance">VIGILANCE (if unprepared)</label></td>
+            	<td><input class="roll-icon" type="button" value="" name=""></td><!-- dice icon should be used here to roll initiative.  needs to auto calculate and needs to add the character to the initiative tracker -->
+            	<td><input type="text" name="modifiers"></td><!-- needs to recoginize the dice code for modifiers i.e. 1b for one boost, 2bl for two setback etc --> 
+            </tr>      
+        </tbody>       
+    </table>            
+</div>
+
+<!-- Skills -->
+<div><!-- I c/p this from the API sheet, I cleaned up the design by taking out most of the json stuff, but I am sure the data needs to be fixed-->
+	<!--Skills List-->
+	<h2 class="char-sheet-section-head1">SKILLS</h2>
+	<!--General Skills Section-->
+    <fieldset class="sheet-skills-section">
+    <table class="general-skills" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <th>GENERAL SKILLS</th>
+            <th>CAREER?</th>
+            <th colspan="2">RANK</th>
+            <th colspan="2"><span style="float:left">MODIFIERS</span></th>
+        </tr>
+        <tbody>
+        <tr><!--Astrogation-->
+            <td><label>Astrogation (Int)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Athletics-->
+            <td><label>Athletics (Br)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Charm-->
+            <td><label>Charm (Pr)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Coercion-->
+            <td><label>Coercion (Will)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Computers-->
+            <td><label>Computers (Int)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Cool-->
+            <td><label>Cool (Pr)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Coordination-->
+            <td><label>Coordination (Ag)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Deception-->
+            <td><label>Deception (Cun)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Discipline-->
+            <td><label>Discipline (Will)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Leadership-->
+            <td><label>Leadership (Pr)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Mechanics-->
+            <td><label>Mechanics (Int)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Medicine-->
+            <td><label>Medicine (Int)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Negotiation-->
+            <td><label>Negotiation (Pr)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Perception-->
+            <td><label>Perception (Cun)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Piloting Planetary-->
+            <td><label>Piloting-Planetary (Ag)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Piloting Space-->
+            <td><label>Piloting-Space (Ag)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Resilience-->
+            <td><label>Resilience (Br)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Skulduggery-->
+            <td><label>Skulduggery (Cun)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Stealth-->
+            <td><label>Stealth (Ag)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Streetwise-->
+            <td><label>Streetwise (Cun)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Survival-->
+            <td><label>Survival (Cun)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        <tr><!--Vigilance-->
+            <td><label>Vigilance (Will)</label></td>
+            <td><input type="checkbox" value="1" name=''></td>
+            <td><input type="number" name="" max="6" min="0" value="0"></td>
+            <td><input type="" name="" value=""></td><!--this needs to be where the dice icons show up based on characteristic and skill ranks i.e. 2Green2Yellow-->
+            <td>
+                <div class="sheet-dice-icon"></div><!--this needs to be where you can manually enter in the roll modifiers per the code 1b for one boost or 2bl for 2 setback-->
+                <div class="sheet-dice-input">
+                    <input type="" name="">
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td><!--this button needs to roll the skill and associated modifiers and output the results to the chat and it needs the die symbol icon-->
+        </tr>
+        </tbody>
+    </table>
+    </fieldset>
+</div>    
+
+<!--Combat Skills-->
+<div>
+    <fieldset class="sheet-combat-skills">
+    <table class="sheet-skills" cellspacing="0" cellpadding="0" border="0">
+        <thead>
+        <tr>
+            <th>COMBAT SKILLS</th>
+            <th>CAREER?</th>
+            <th colspan="2">RANK</th>
+            <th colspan="2">MODIFIERS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><!--LightSaber-->
+            <td valign="middle">
+                <label>Lightsaber</label>
+                <select name="" style="float:right; width:50%">
+                    <option value="">Brawn</option><!-- encum not working -->
+                    <option value="">Agility</option>
+                    <option value="">Intellect</option>
+                    <option value="">Cunning</option>
+                    <option value="">Willpower</option>
+                    <option value="">Presence</option>
+                </select>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Brawl-->
+            <td>
+                <label>Brawl (Br)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Gunnery-->
+            <td>
+                <label>Gunnery (Agi)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Melee-->
+            <td>
+                <label>Melee (Br)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Ranged - Light-->
+            <td>
+                <label>Ranged - Light (Ag)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Ranged - Heavy-->
+            <td>
+                <label>Ranged - Heavy (Ag)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        </tbody>
+    </table>
+    </fieldset>
+</div>    
+
+<!--Knowledge Skills Section-->
+<div>
+    <fieldset class="sheet-knowledge-skills">
+    <table class="sheet-skills" cellspacing="0" cellpadding="0" border="0">
+        <thead>
+        <tr>
+            <th>KNOWLEDGE SKILLS</th>
+            <th>CAREER</th>
+            <th colspan="2">RANK</th>
+            <th colspan="2">MODS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><!--Core Worlds-->
+            <td>
+                <label>Core Worlds (Int)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Education-->
+            <td>
+                <label>Education (Int)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Lore-->
+            <td>
+                <label>Lore (Int)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Outer Rim-->
+            <td>
+                <label>Outer Rim (Int)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Underworld-->
+            <td>
+                <label>Underworld (Int)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Xenology-->
+            <td>
+                <label>Xenology (Int)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='' value=''></button></td>
+        </tr>
+        <tr><!--Warfare-->
+            <td>
+                <label>Warfare (Int)</label>
+            </td>
+            <td><input name='' type="checkbox" value="1"></td>
+            <td><input type="number" name="" max="6" min="0" value="0" /></td>
+            <td>
+                <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+            </td>
+            <td>
+                <div class="sheet-dice-icon"></div>
+                <div class="sheet-dice-input">
+                    <input type="text" name="" />
+                </div>
+            </td>
+            <td><button type='roll' name='roll_Warfare' value=''></button></td>
+        </tr>
+        </tbody>
+    </table>
+    </fieldset>
+</div>    
+      
+<!--Custom Skills-->
+<div>
+    <fieldset class="sheet-custom-skills">
+        <table class="sheet-skills" cellspacing="0" cellpadding="0" border="0">
+            <thead>
+                <tr>
+                    <th>CUSTOM SKILL</th>
+                    <th colspan="2">CHAR</th>
+                    <th colspan="2">CAREER</th>
+                    <th colspan="2">RANK</th>
+                    <th colspan="2">MODS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><!--Custom Skill 1-->
+                    <td><input type="text" name="" /></td>
+                    <td>
+                        <select name="">
+                            <option value="">Brawn</option><!-- encum not working -->
+                            <option value="">Agility</option>
+                            <option value="">Intellect</option>
+                            <option value="">Cunning</option>
+                            <option value="">Willpower</option>
+                            <option value="">Presence</option>
+                        </select>
+                    </td>
+                    <td><input name='' type="checkbox" value="1"></td>
+                    <td><input type="number" name="" max="6" min="0" value="0" /></td>
+                    <td>
+                        <input class="sheet-yd" type="hidden" name="" value="" disabled><span></span>
+                        <input class="sheet-gd" type="hidden" name="" value="" disabled><span></span>
+                    </td>
+                    <td>
+                        <div class="sheet-dice-icon"></div>
+                        <div class="sheet-dice-input">
+                            <input type="text" name="" />
+                        </div>
+                    </td>
+                    <td><button type='roll' name='' value=''></button></td>
+                </tr>
+            </tbody>
+        </table>
+	</fieldset><!--need to add buttom to add new custom skills-->
+</div>    
+
+<!--Weapons-->
+<div class="sheet-weapons">
+    <form>
+        <h2>WEAPONS</h2>   
+        <table>
+            <tr>
+                <th>WEAPON</th>
+                <th>SKILL</th>
+                <th>DAMAGE</th>
+                <th>RANGE</th>
+                <th>CRIT</th>
+                <th>SPECIAL</th>
+            </tr>
+            <tr>
+                <td class="sheet-longfield"><input type="text" class="sheet-longfield" name="attr_weapon_name" /></td>
+                <td class="sheet-short">                            
+                    <select name="">
+                        <option value="">Brawn</option><!-- encum not working -->
+                        <option value="">Agility</option>
+                        <option value="">Intellect</option>
+                        <option value="">Cunning</option>
+                        <option value="">Willpower</option>
+                        <option value="">Presence</option>
+                    </select></td>
+                <td class="sheet-short"><input type="text" class="sheet-short" name="attr_weapon_crit" /></td>
+                <td class="sheet-short"><input type="text" class="sheet-short" name="attr_weapon_range" /></td>
+                <td class="sheet-short"><input type="text" class="sheet-short" name="attr_weapon_enc" /></td>
+                <td class="sheet-short"><input type="text" class="sheet-short" name="attr_weapon_hp" /></td>
+            </tr>
+        </table>
+    </form>    <!--need to add button to add new weapon-->
+</div>
+                
+<!--Talent Summary-->
+<div class="sheet-talents">
+    <form>
+        <h2>TALENTS</h2>   
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>RANK</th>
+                <th>PAGE #</th>
+                <th>NOTES</th>
+            </tr>
+            <tr>
+                <td class="sheet-longfield"><input type="text" class="sheet-longfield" name="attr_talent_name" /></td>
+                <td class="sheet-short"><input type="text" class="sheet-short" name="attr_talent_rank" /></td>
+                <td class="sheet-short"><input type="text" class="sheet-short" name="attr_talent_page" /></td>
+                <td class="sheet-longfield"><input type="text" class="sheet-longfield" name="attr_talent_notes" /></td>
+            </tr>
+        </table>
+    </form>    <!--need to add button to add new talent-->
+</div>
+
+<!--Force Powers-->
+<div class="sheet-force-powers">
+    <form>
+        <h2>FORCE POWERS</h2>   
+        <table>
+            <tr>
+                <th>BASIC POWER</th>
+                <th>PAGE #</th>
+                <th>DESCRIPTION</th>
+            </tr>
+            <tr>
+                <td class="sheet-longfield"><input type="text" class="sheet-longfield" name="attr_force_power_basic" /></td>
+                <td class="sheet-short"><input type="text" class="sheet-short" name="attr_force_power_page" /></td>
+                <td class="sheet-short"><input type="text" class="sheet-short" name="attr_force_power_description" /></td>
+            </tr>
+            <tr><input type="textarea" name="upgrade_notes" placeholder="UPGRADE NOTES"></tr>
+        </table>
+    </form>    <!--need to add button to add new talent-->
+</div>
+
+	<div style="margin-top: 500px;"></div>

@@ -1,0 +1,83 @@
+.sheet-header-title{
+	position: center;
+
+}
+
+.sheet-main-character-info{
+	float: left;
+	background-color: #BDBDBD;
+	width: 33.3%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.sheet-detailes{
+	float: left;
+	width: 33.3%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.sheet-initiative{
+	float: left;
+	background-color: #BDBDBD;
+	width: 30%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.sheet-skills-section{
+	float: left;
+	width: 33.3%;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.sheet-combat-skills{
+	float: left;
+	width: 33.3%;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.sheet-knowledge-skills{
+	float: left;
+	width: 33.3%;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.sheet-custom-skills{
+	float: left;
+	width: 33.3%;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.sheet-weapons{
+	float: left;
+
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.sheet-talents{
+	float: left;
+
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.sheet-force-powers{
+	float: left;
+
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
