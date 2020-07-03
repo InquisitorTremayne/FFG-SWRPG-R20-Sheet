@@ -1,0 +1,94 @@
+.sheet-main {
+  display: grid;
+  width: 800px;
+  height: 900px;
+  grid-gap: 4px;
+  grid-template-columns: 100px 1fr 1fr 1fr;
+  grid-template-rows: 100px 35px 200px 100px 100px 1fr 100px 100px;
+  grid-template-areas:"dice    dice    dice    dice"
+                      "tabs    tabs    tabs    tabs"
+                      "char    char    char    info"
+                      "stats   stats   stats   stats"
+                      "attri   attri   attri   attri"
+                      "skill   skill   skills  skills"
+                      "weapon  weapon  weapon  weapon"
+                      "talent  talent  power   power";
+}
+
+/*----------------- GENERAL CSS ------------------*/
+
+textarea {
+  width: 90%;
+  height: 85%;
+}
+
+.sheet-section {
+    padding: 5px;
+    border-style: solid;
+}
+
+.sheet-flex-col {
+  display: flex;
+  /*justify-content: flex-start;*/
+}
+
+.sheet-flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+/*------------- Section-specific CSS -------------*/
+
+.sheet-dice {
+  grid-area: dice;
+  background-color: #C2B280;
+}
+
+.sheet-tabs {
+  grid-area: tabs;
+  background-color: #848482;
+}
+
+.sheet-character-info {
+  grid-area: char;
+  background-color: #E5E4E2;
+}
+
+.sheet-version-info {
+  grid-area: info;
+}
+
+.sheet-stats {
+  grid-area: stats;
+  background-color: #98AFC7;
+}
+
+.sheet-characteristics {
+  grid-area: attri;
+  background-color: #98AFC7;
+}
+
+.sheet-general-skills {
+  grid-area: skill;
+  background-color: #98AFC7;
+}
+
+.sheet-other-skills {
+  grid-area: skills;
+  background-color: #98AFC7;
+}
+
+.sheet-weapons {
+  grid-area: weapon;
+  background-color: #98AFC7;
+}
+
+.sheet-talents {
+  grid-area: talent;
+  background-color: #98AFC7;
+}
+
+.sheet-powers {
+  grid-area: power;
+  background-color: #98AFC7;
+}
