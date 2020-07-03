@@ -1,0 +1,77 @@
+<div class="sheet-main">
+    <div class="dice section">
+      <text>DICE GO HERE</text>
+    </div>
+    <div class="tabs section">
+      <button type="action" name="act_character" >Character</button>
+      <button type="action" name="act_Inventory" >Inventory</button>
+      <button type="action" name="act_Abilities" >Abilities</button>
+    </div>
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
+    <div class="character-info section">
+      <h2>CHARACTER</h2>
+      <label>CHARACTER NAME: <input name="attr_character_name" type="text"/></label>
+      <label>SPECIES: <input name="attr_type" type="text" /></label>
+      <label>CAREER: <input name="attr_race" type="text" /></label>
+      <label>SPECIALIZATION: <input name="attr_cha" type="text"/></label>
+    </div>
+    <div class="version-info section">
+      <h2>STAR WARS ROLEPLAYING GAME</h2>
+      <text>Created by Inquisitor Tremayne V.1.0.0</text>
+    </div>
+    <div class="stats section">
+      <text>STATS GO HERE</text>
+    </div>
+    <div class="characteristics flex-col">
+      <label>Brawn </label><input type="number" name="attr_brn" max="7" min="0" value="2"/>
+      <label>Agility </label><input type="number" name="attr_agi" max="7" min="0" value="2"/>
+      <label>Intellect </label><input type="number" name="attr_int" max="7" min="0"value="2"/>
+      <label>Cunning </label><input type="number" name="attr_cun" max="7" min="0" value="2"/>
+      <label>Willpower </label><input type="number" name="attr_wil" max="7" min="0" value="2"/>
+      <label>Presence </label><input type="number" name="attr_pre" max="7" min="0" value="2"/>
+    </div>
+    <div class="general-skills section">
+      <text>GENERAL SKILLS GO HERE</text>
+    </div>
+    <div class="other-skills section">
+      <text>OTHER SKILLS GO HERE</text>
+    </div>
+    <div class="weapons section flex-col">
+      <text>WEAPONS GO HERE</text>
+      <fieldset class="repeating_power">
+          <input name="attr_power" type="text" />
+      </fieldset>
+    </div>
+    <div class="talents section flex-col">
+      <text>TALENTS GO HERE</text>
+      <fieldset class="repeating_talent">
+          <input name="attr_talent" type="text" />
+      </fieldset>
+    </div>
+    <div class="powers section flex-col">
+      <text>FORCE POWERS GO HERE</text>
+      <fieldset class="repeating_power">
+          <input name="attr_power" type="text" />
+      </fieldset>
+    </div>
+</div>
+<div class='sheet-inventory'>
+    <h2>Journal/Notes</h2>
+    <span>Journal/Notes Stuff Goes here</span> 
+</div>
+<div class='sheet-abilities'>
+    <h2>Config/Settings</h2>
+    <span>Sheet Config/Settings goes here</span> 
+</div>
+
+<!----- SCRIPTS ---->
+<script type="text/worker">
+    const buttonlist = ["character","journal","configuration"];
+    buttonlist.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                sheetTab: button
+            });
+        });
+    });
+</script>
