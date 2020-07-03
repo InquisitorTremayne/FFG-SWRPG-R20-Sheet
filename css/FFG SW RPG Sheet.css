@@ -22,6 +22,10 @@ textarea {
   height: 85%;
 }
 
+label {
+  font-size: 12pt;
+}
+
 .sheet-section {
     padding: 5px;
     border-style: solid;
@@ -91,3 +95,4 @@ textarea {
   grid-area: power;
   background-color: #caccc9;
 }
+
