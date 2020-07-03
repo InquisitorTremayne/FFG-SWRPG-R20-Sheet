@@ -41,7 +41,6 @@ textarea {
 
 .sheet-dice {
   grid-area: dice;
-  background-color: #C2B280;
 }
 
 .sheet-tabs {
@@ -51,7 +50,7 @@ textarea {
 
 .sheet-character-info {
   grid-area: char;
-  background-color: #E5E4E2;
+  background-color: #cfd1ce;
 }
 
 .sheet-version-info {
@@ -60,35 +59,35 @@ textarea {
 
 .sheet-stats {
   grid-area: stats;
-  background-color: #98AFC7;
+  background-color: #72cddc;
 }
 
 .sheet-characteristics {
   grid-area: attri;
-  background-color: #98AFC7;
+  background-color: #9d927e;
 }
 
 .sheet-general-skills {
   grid-area: skill;
-  background-color: #98AFC7;
+  background-color: #dcddd9;
 }
 
 .sheet-other-skills {
   grid-area: skills;
-  background-color: #98AFC7;
+  background-color: #dcddd9;
 }
 
 .sheet-weapons {
   grid-area: weapon;
-  background-color: #98AFC7;
+  background-color: #f7f7f5;
 }
 
 .sheet-talents {
   grid-area: talent;
-  background-color: #98AFC7;
+  background-color: #caccc9;
 }
 
 .sheet-powers {
   grid-area: power;
-  background-color: #98AFC7;
+  background-color: #caccc9;
 }
