@@ -5,7 +5,7 @@
   grid-gap: 4px;
   grid-template-columns: 100px 1fr 1fr 1fr;
   grid-template-rows: 100px 35px 200px 100px 100px 1fr 100px 100px;
-  grid-template-areas:"dice    dice    dice    dice"
+  grid-template-areas:"dice    dice    dice    blank"
                       "tabs    tabs    tabs    tabs"
                       "char    char    char    info"
                       "stats   stats   stats   stats"
@@ -23,12 +23,15 @@ textarea {
 }
 
 label {
-  font-size: 12pt;
+  font-size: 8pt;
+}
+
+h2 {
+  font-size: 14pt;
 }
 
 .sheet-section {
     padding: 5px;
-    border-style: solid;
 }
 
 .sheet-flex-col {
@@ -41,11 +44,20 @@ label {
   justify-content: center;
 }
 
-/*------------- Section-specific CSS -------------*/
+/*--------------- Dice Pool CSS --------------------*/
 
 .sheet-dice {
   grid-area: dice;
 }
+
+.sheet-dice-inputs {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 50px 50px;
+
+}
+
+/*------------- Main Sheet-specific CSS -------------*/
 
 .sheet-tabs {
   grid-area: tabs;
