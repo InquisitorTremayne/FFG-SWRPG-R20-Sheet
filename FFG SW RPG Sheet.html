@@ -1,10 +1,14 @@
 <div class="sheet-main">
-    <div class="version-info section">
+    <div class="version-info flex-col">
       <h2>STAR WARS ROLEPLAYING GAME</h2>
-      <text>Created by Inquisitor Tremayne V.1.0.0</text>
     </div>
+
+    <div class="version-info1 flex-col">
+      <text>Created by InquisitorTremayne V. 1.0.0</text>
+    </div>
+
     <div class="dice section">
-      <h2 class="dice-pool-head">Dice Pool</h2> <!--- this whole section will need the dice functionality, rolling dice and the ability to reset the pool --->
+      <h2 class="dice-pool-head">Dice Pool</h2> <!--- this whole section will need the dice roll integration with the API, rolling dice and the ability to reset the pool --->
         <div class="dice-inputs">
           <input class="bst-die" type="number" name="attr_blue" max="10" min="-10" value="0">
           <input class="abil-die" type="number" name="attr_green" max="10" min="0" value="0">
@@ -22,22 +26,127 @@
           <button class="reset-dice" type="roll" name="roll_reset_dice_pool"></button>
         </div>
     </div>
-    <div class="tabs section">
-      <button type="action" name="act_character" >Character</button>
-      <button type="action" name="act_inventory" >Inventory</button>
-      <button type="action" name="act_abilities" >Abilities</button>
-    </div>
-    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
+
     <div class="character-info section">
-      <h2>CHARACTER</h2>
-      <label>CHARACTER NAME: <input name="attr_character_name" type="text"/></label>
-      <label>SPECIES: <input name="attr_type" type="text" /></label>
-      <label>CAREER: <input name="attr_race" type="text" /></label>
-      <label>SPECIALIZATION: <input name="attr_cha" type="text"/></label>
+      <label>CHARACTER NAME:</label><input class="char-info-input" name="attr_character_name" type="text"/>
+      <label>SPECIES:</label><select name='attr_species_list'>
+          <option value=""></option>
+          <option value="Aleena">Aleena</option>
+          <option value="Anx">Anx</option>
+          <option value="Aqualish (Aquala)">Aqualish (Aquala)</option>
+          <option value="Aqualish (Quara)">Aqualish (Quara)</option>
+          <option value="Aqualish (Ualaq)">Aqualish (Ualaq)</option>
+          <option value="Arcona">Arcona</option>
+          <option value="Bardottan">Bardottan</option>
+          <option value="Besalisk">Besalisk</option>
+          <option value="Bothan">Bothan</option>
+          <option value="Caamasi">Caamasi</option>
+          <option value="Cerean">Cerean</option>
+          <option value="Chadra-Fan">Chadra-Fan</option>
+          <option value="Chagrian">Chagrian</option>
+          <option value="Chevin">Chevin</option>
+          <option value="Chiss">Chiss</option>
+          <option value="Corellian Human">Corellian Human</option>
+          <option value="Devaronian">Devaronian</option>
+          <option value="Drall">Drall</option>
+          <option value="Dressellian (Primitive)">Dressellian (Primitive)</option>
+          <option value="Dressellian (Non-Primitive)">Dressellian (Non-Primitive)</option>
+          <option value="Droid">Droid</option>
+          <option value="Dug">Dug</option>
+          <option value="Duros">Duros</option>
+          <option value="Falleen">Falleen</option>
+          <option value="Gand (With Lungs)">Gand (With Lungs)</option>
+          <option value="Gand (Without Lungs)">Gand (Without Lungs)</option>
+          <option value="Gank">Gank</option>
+          <option value="Gossam">Gossam</option>
+          <option value="Gotal">Gotal</option>
+          <option value="Gran">Gran</option>
+          <option value="Gungan">Gungan</option>
+          <option value="Human">Human</option>
+          <option value="Hutt">Hutt</option>
+          <option value="Iktotchi">Iktotchi</option>
+          <option value="Ishi Tib">Ishi Tib</option>
+          <option value="Ithorian">Ithorian</option>
+          <option value="Kel Dor">Kel Dor</option>
+          <option value="Klatooinian">Klatooinian</option>
+          <option value="Lannik">Lannik</option>
+          <option value="Mirialan">Mirialan</option>
+          <option value="Mon Calamari">Mon Calamari</option>
+          <option value="Mustafarian (Northern)">Mustafarian (Northern)</option>
+          <option value="Mustafarian (Southern)">Mustafarian (Southern)</option>
+          <option value="Nautolan">Nautolan</option>
+          <option value="Neimodian">Neimodian</option>
+          <option value="Nikto (Green)">Nikto (Green)</option>
+          <option value="Nikto (Mountain)">Nikto (Mountain)</option>
+          <option value="Nikto (Pale)">Nikto (Pale)</option>
+          <option value="Nikto (Red)">Nikto (Red)</option>
+          <option value="Nikto (Southern)">Nikto (Southern)</option>
+          <option value="Polis Massan (With Vocal Chords)">Polis Massan (With Vocal Chords)</option>
+          <option value="Polis Massan (Without Vocal Chords)">Polis Massan (Without Vocal Chords)</option>
+          <option value="Quarren">Quarren</option>
+          <option value="Quermian">Quermian</option>
+          <option value="Rodian">Rodian</option>
+          <option value="Sakiyan">Sakiyan</option>
+          <option value="Sathari">Sathari</option>
+          <option value="Selonian">Selonian</option>
+          <option value="Sullustan">Sullustan</option>
+          <option value="Togruta">Togruta</option>
+          <option value="Toydarian">Toydarian</option>
+          <option value="Trandosian">Trandosian</option>
+          <option value="Twi'lek">Twi'lek</option>
+          <option value="Verpine">Verpine</option>
+          <option value="Weequay">Weequay</option>
+          <option value="Whiphid">Whiphid</option>
+          <option value="Wookiee">Wookiee</option>/8
+          <option value="Xexto">Xexto</option>
+          <option value="Zabrak">Zabrak</option></select><!--- need to update this list --->
+      <label>CAREER:</label><select name="attr_career_list">
+        <option value=""></option>
+        <optgroup label="Edge of the Empire">
+          <option value="Bounty Hunter">Bounty Hunter</option>
+          <option value="Colonist">Colonist</option>
+          <option value="Explorer">Explorer</option>
+          <option value="Hired Gun">Hired Gun</option>
+          <option value="Smuggler">Smuggler</option>
+          <option value="Technican">Technican</option>
+        </optgroup>
+        <optgroup label="Age of Rebellion">
+          <option value="Ace">Ace</option>
+          <option value="Commander">Commander</option>
+          <option value="Diplomat">Diplomat</option>
+          <option value="Engineer">Engineer</option>
+          <option value="Soldier">Soldier</option>
+          <option value="Spy">Spy</option>
+        </optgroup>
+        <optgroup label="Force and Destiny">
+          <option value="Consular">Consular</option>
+          <option value="Guardian">Guardian</option>
+          <option value="Mystic">Mystic</option>
+          <option value="Seeker">Seeker</option>
+          <option value="Sentinel">Sentinel</option>
+          <option value="Warrior">Warrior</option>
+        </optgroup>
+        <optgroup label="All">
+          <option value="Universal">Universal</option>
+        </optgroup><!--- need to update this list --->
+      </select>
+      <label>SPECIALIZATION:</label><input class="char-info-input" type="text" name="attr_specialization">
     </div>
+
+    <div class="tabs section"><!--- need to make functional to switch to the other pages --->
+      <button class="tab-button" type="action" name="act_character" >Character</button>
+      <button class="tab-button"type="action" name="act_inventory" >Inventory</button>
+      <button class="tab-button" type="action" name="act_abilities" >Abilities</button>
+      <button class="tab-button" type="action" name="act_log" >Log</button>
+      <button class="tab-button" type="action" name="act_settings" >Settings</button>
+    </div>
+
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'/>
+    
     <div class="stats section">
       <text>STATS GO HERE</text>
     </div>
+
     <div class="characteristics flex-col">
       <label>Brawn </label><input type="number" name="attr_brn" max="7" min="0" value="2"/>
       <label>Agility </label><input type="number" name="attr_agi" max="7" min="0" value="2"/>
@@ -46,24 +155,29 @@
       <label>Willpower </label><input type="number" name="attr_wil" max="7" min="0" value="2"/>
       <label>Presence </label><input type="number" name="attr_pre" max="7" min="0" value="2"/>
     </div>
+
     <div class="general-skills section">
       <text>GENERAL SKILLS GO HERE</text>
     </div>
+
     <div class="other-skills section">
       <text>OTHER SKILLS GO HERE</text>
     </div>
+
     <div class="weapons section flex-col">
       <text>WEAPONS GO HERE</text>
       <fieldset class="repeating_power">
           <input name="attr_power" type="text" />
       </fieldset>
     </div>
+
     <div class="talents section flex-col">
       <text>TALENTS GO HERE</text>
       <fieldset class="repeating_talent">
           <input name="attr_talent" type="text" />
       </fieldset>
     </div>
+
     <div class="powers section flex-col">
       <text>FORCE POWERS GO HERE</text>
       <fieldset class="repeating_power">
@@ -71,10 +185,12 @@
       </fieldset>
     </div>
 </div>
+
 <div class='sheet-inventory'>
     <h2>Journal/Notes</h2>
     <span>Journal/Notes Stuff Goes here</span> 
 </div>
+
 <div class='sheet-abilities'>
     <h2>Config/Settings</h2>
     <span>Sheet Config/Settings goes here</span> 
