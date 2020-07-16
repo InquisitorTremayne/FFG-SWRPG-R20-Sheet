@@ -5,7 +5,7 @@
   grid-gap: 4px;
   grid-template-columns: 100px 1fr 1fr 1fr;
   grid-template-rows: 100px 35px 200px 100px 100px 1fr 100px 100px;
-  grid-template-areas:"dice    dice    dice    blank"
+  grid-template-areas:"dice    dice    blank    blank"
                       "tabs    tabs    tabs    tabs"
                       "char    char    char    info"
                       "stats   stats   stats   stats"
@@ -54,9 +54,81 @@ h2 {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 25px 25px;
-
+  grid-gap: 2px;
 }
 
+.sheet-bst-die {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/boost_die_small.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: : 25px;
+  background-position: right;
+  font-weight: bold;
+  font-color: white;
+}
+
+.sheet-abil-die {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/ability_die_small.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: : 25px;
+  background-position: right;
+  font-weight: bold;
+}
+
+.sheet-prof-die {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/proficiency_die_small.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: : 25px;
+  background-position: right;
+  font-weight: bold;
+}  
+
+.sheet-force-die {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/force_die_small.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: : 25px;
+  background-position: right;
+  font-weight: bold;
+}
+
+.sheet-sbk-die {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/setback_die_small.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: : 25px;
+  background-position: right;
+  font-weight: bold;
+}
+
+.sheet-diff-die {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/difficulty_die_small.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: : 25px;
+  background-position: right;
+  font-weight: bold;
+}
+
+.sheet-chal-die {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/challenge_die_small.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: : 25px;
+  background-position: right;
+  font-weight: bold;
+}
+
+.sheet-up-arrow {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/704124-Buff2_small.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: : 25px;
+  background-position: right;
+  font-weight: bold;
+}
+
+.sheet-dwn-arrow {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/704184-Debuff4_small.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right;
+  font-weight: bold;
+}
 
 
 /*------------- Main Sheet-specific CSS -------------*/
