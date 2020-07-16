@@ -5,14 +5,14 @@
   grid-gap: 4px;
   grid-template-columns: 100px 1fr 1fr 1fr;
   grid-template-rows: 100px 35px 200px 100px 100px 1fr 100px 100px;
-  grid-template-areas:"dice    dice    blank    blank"
-                      "tabs    tabs    tabs    tabs"
-                      "char    char    char    info"
-                      "stats   stats   stats   stats"
-                      "attri   attri   attri   attri"
-                      "skill   skill   skills  skills"
-                      "weapon  weapon  weapon  weapon"
-                      "talent  talent  power   power";
+  grid-template-areas: "blank  info   info   blank"
+                       "dice   dice   char   char"
+                       "tabs   tabs   blank  blank"
+                       "stats  stats  stats  stats"
+                       "attri  attri  attri  attri"
+                       "skill  skill  skills skills"
+                       "weapon weapon weapon weapon"
+                       "talent talent power  power"
 }
 
 /*----------------- GENERAL CSS ------------------*/
@@ -48,6 +48,9 @@ h2 {
 
 .sheet-dice {
   grid-area: dice;
+  border: solid 2px;
+  border-color: #495558;
+  background-color: #354456;
 }
 
 .sheet-dice-inputs {
@@ -57,13 +60,16 @@ h2 {
   grid-gap: 2px;
 }
 
+.sheet-dice-pool-head {
+  color: white;
+}
+
 .sheet-bst-die {
   background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/boost_die_small.png?raw=true);
   background-repeat: no-repeat;
   background-size: : 25px;
   background-position: right;
   font-weight: bold;
-  font-color: white;
 }
 
 .sheet-abil-die {
@@ -128,6 +134,22 @@ h2 {
   background-size: 25px;
   background-position: right;
   font-weight: bold;
+}
+
+button[type="roll"].sheet-reset-dice:before{
+  content: ' ';
+}
+
+
+button[type="roll"].sheet-reset-dice{
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/reset_button.png?raw=true); 
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+  border-style: none;
+  background-color: transparent;
+  margin-left: 5px;
 }
 
 
