@@ -53,9 +53,11 @@ h2 {
 .sheet-dice-inputs {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 50px 50px;
+  grid-template-rows: 25px 25px;
 
 }
+
+
 
 /*------------- Main Sheet-specific CSS -------------*/
 
