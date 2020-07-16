@@ -4,7 +4,7 @@
   height: 900px;
   grid-gap: 4px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25px 100px 30px 100px 100px 1fr 100px 100px;
+  grid-template-rows: 25px 100px 30px 80px 60px 1fr 100px 100px;
   grid-template-areas:"info    info    infor   infor"
                       "dice    dice    char    char"
                       "tabs    tabs    tabs    tabs"
@@ -40,10 +40,6 @@ h2 {
   font-size: 14pt;
 }
 
-a:hover {
-
-}
-
 .sheet-char-top-section-float {
   position: fixed;
   top: 20px;
@@ -55,7 +51,7 @@ a:hover {
 }
 
 .sheet-section {
-    padding: 5px;
+    padding: 2px;
 }
 
 .sheet-flex-col {
@@ -199,18 +195,46 @@ button[type="roll"].sheet-reset-dice{
 }
 
 
-/*--- Sheet Tabs CSS ---*/
+/*--- Tabs Section CSS ---*/
 
 .sheet-tabs {
   grid-area: tabs;
   background-color: #848482;
 }
 
+/*--- Stats Section CSS ---*/
 
 .sheet-stats {
   grid-area: stats;
   background-color: #72cddc;
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
 }
+
+.sheet-soak-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/soak_box_small.png?raw=true);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: none;
+}
+
+.sheet-threshold-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/threshold_box_small.png?raw=true);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: none;
+}
+
+
+input.sheet-soak-stat {
+  display: inline-grid;
+
+
+}
+
+
+
+/*--- Characteristics Section ---*/
 
 .sheet-characteristics {
   grid-area: attri;
