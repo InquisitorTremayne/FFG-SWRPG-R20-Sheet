@@ -1,6 +1,10 @@
 <div class="sheet-main">
+    <div class="version-info section">
+      <h2>STAR WARS ROLEPLAYING GAME</h2>
+      <text>Created by Inquisitor Tremayne V.1.0.0</text>
+    </div>
     <div class="dice section">
-      <h2>Dice Pool</h2>
+      <h2 class="dice-pool-head">Dice Pool</h2> <!--- this whole section will need the dice functionality, rolling dice and the ability to reset the pool --->
         <div class="dice-inputs">
           <input class="bst-die" type="number" name="attr_blue" max="10" min="-10" value="0">
           <input class="abil-die" type="number" name="attr_green" max="10" min="0" value="0">
@@ -15,7 +19,7 @@
           <button type="roll"></button>
           <input class="up-arrow" type="number" name="attr_up_diff" max="10" min="-5" value="0">
           <input class="dwn-arrow" type="number" name="attr_down_diff" max="10" min="-5" value="0">
-          <button type="roll" name="roll_reset_dice_pool"></button>
+          <button class="reset-dice" type="roll" name="roll_reset_dice_pool"></button>
         </div>
     </div>
     <div class="tabs section">
@@ -30,10 +34,6 @@
       <label>SPECIES: <input name="attr_type" type="text" /></label>
       <label>CAREER: <input name="attr_race" type="text" /></label>
       <label>SPECIALIZATION: <input name="attr_cha" type="text"/></label>
-    </div>
-    <div class="version-info section">
-      <h2>STAR WARS ROLEPLAYING GAME</h2>
-      <text>Created by Inquisitor Tremayne V.1.0.0</text>
     </div>
     <div class="stats section">
       <text>STATS GO HERE</text>
