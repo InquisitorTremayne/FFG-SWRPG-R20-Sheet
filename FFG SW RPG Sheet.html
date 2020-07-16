@@ -2,18 +2,20 @@
     <div class="dice section">
       <h2>Dice Pool</h2>
         <div class="dice-inputs">
-          <label><img src="https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/boost_die.png?raw=true" style="height: 14px; width: 14px"></label><input type="number" name="attr_blue" max="10" min="-10" value="0">
-          <input type="number" name="attr_green" max="10" min="0" value="0">
-          <input type="number" name="attr_yellow" max="10" min="0" value="0">
-          <input type="number" name="attr_white" max="10" min="0" value="0">
-          <input type="number" name="attr_black" max="10" min="10" value="0">
-          <input type="number" name="attr_purple" max="10" min="0" value="0">
-          <input type="number" name="attr_red" max="10" min="0" value="0">
-          <input type="number" name="attr_up_roll" max="10" min="-5" value="0">
-          <input type="number" name="attr_down_roll" max="10" min="-5" value="0">
+          <input class="bst-die" type="number" name="attr_blue" max="10" min="-10" value="0">
+          <input class="abil-die" type="number" name="attr_green" max="10" min="0" value="0">
+          <input class="prof-die" type="number" name="attr_yellow" max="10" min="0" value="0">
+          <input class="force-die" type="number" name="attr_white" max="10" min="0" value="0">
+          <input class="sbk-die" type="number" name="attr_black" max="10" min="-10" value="0">
+          <input class="diff-die" type="number" name="attr_purple" max="10" min="0" value="0">
+          <input class="chal-die" type="number" name="attr_red" max="10" min="0" value="0">
+          <br>
+          <input class="up-arrow" type="number" name="attr_up_roll" max="10" min="-5" value="0">
+          <input class="dwn-arrow" type="number" name="attr_down_roll" max="10" min="-5" value="0">
           <button type="roll"></button>
-          <input type="number" name="attr_up_diff" max="10" min="-5" value="0">
-          <input type="number" name="attr_down_diff" max="10" min="-5" value="0">
+          <input class="up-arrow" type="number" name="attr_up_diff" max="10" min="-5" value="0">
+          <input class="dwn-arrow" type="number" name="attr_down_diff" max="10" min="-5" value="0">
+          <button type="roll" name="roll_reset_dice_pool"></button>
         </div>
     </div>
     <div class="tabs section">
