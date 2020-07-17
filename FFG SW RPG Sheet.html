@@ -145,23 +145,36 @@
     
     <div class="stats section">
       <div class="soak-box">
-        <input class="soak-stat" type="number" name="attr_soak">
+        <span class="stat-text-soak-head">SOAK</span>
+        <input class="soak-stat" type="number" name="attr_soak" max="20" min="-5" value="0">
       </div>
       <div class="threshold-box">
-        <input class="wound-threshold-stat" type="number" name="attr_soak">
-        <input class="wound-current-stat" type="number" name="attr_soak">
+        <span class="stat-text-head">WOUNDS</span>
+        <input class="wound-threshold-stat" type="number" name="attr_soak" max="60" min="-60" value="0">
+        <input class="wound-current-stat" type="number" name="attr_soak" max="60" min="-60" value="0">
+        <span class="stat-text-foot">Threshold</span>
+        <span class="stat-text-foot">Current</span>
       </div>
       <div class="threshold-box">
-        <input class="strain-threshold-stat" type="number" name="attr_soak">
-        <input class="strain-current-stat" type="number" name="attr_soak">
+        <span class="stat-text-head">STRAIN</span>
+        <input class="strain-threshold-stat" type="number" name="attr_soak" max="60" min="-60" value="0">
+        <input class="strain-current-stat" type="number" name="attr_soak" max="60" min="-60" value="0">
+        <span class="stat-text-foot">Threshold</span>
+        <span class="stat-text-foot">Current</span>
       </div>
       <div class="threshold-box">
-        <input class="defense-ranged-stat" type="number" name="attr_soak">
-        <input class="defense-melee-stat" type="number" name="attr_soak">
+        <span class="stat-text-head">DEFENSE</span>
+        <input class="defense-ranged-stat" type="number" name="attr_soak" max="4" min="0" value="0">
+        <input class="defense-melee-stat" type="number" name="attr_soak" max="4" min="0" value="0">
+        <span class="stat-text-foot">Threshold</span>
+        <span class="stat-text-foot">Current</span>
       </div>
       <div class="threshold-box">
-        <input class="force-threshold-stat" type="number" name="attr_soak">
-        <input class="force-current-stat" type="number" name="attr_soak">
+        <span class="stat-text-force-head">FORCE</span>
+        <input class="force-threshold-stat" type="number" name="attr_soak" max="10" min="0" value="0">
+        <input class="force-current-stat" type="number" name="attr_soak" max="10" min="0" value="0">
+        <span class="stat-text-foot">Threshold</span>
+        <span class="stat-text-foot">Current</span>
       </div>
     </div>
 
