@@ -226,12 +226,62 @@ button[type="roll"].sheet-reset-dice{
 }
 
 
-input.sheet-soak-stat {
+input.sheet-soak-stat,
+input.sheet-wound-threshold-stat,
+input.sheet-wound-current-stat,
+input.sheet-strain-threshold-stat,
+input.sheet-strain-current-stat,
+input.sheet-defense-ranged-stat,
+input.sheet-defense-melee-stat,
+input.sheet-force-threshold-stat,
+input.sheet-force-current-stat {
   display: inline-grid;
-
-
+  font-weight: bold;
+  font-size: 16pt;
+  margin-top: 5px;
+  border: 1px transparent;
+  background-color: transparent;
 }
 
+input.sheet-soak-stat {
+  margin-left: 40px;
+  text-align: center;
+}
+
+input.sheet-wound-threshold-stat,
+input.sheet-strain-threshold-stat,
+input.sheet-defense-ranged-stat,
+input.sheet-force-threshold-stat {
+  text-align: right;
+}
+
+input.sheet-wound-current-stat,
+input.sheet-strain-current-stat,
+input.sheet-defense-melee-stat,
+input.sheet-force-current-stat {
+  text-align: left;
+}
+
+span.sheet-stat-text-head {
+  margin-top: 1em;
+  margin-left: 3em;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+span.sheet-stat-text-soak-head {
+  margin-top: 1em;
+  margin-left: 48px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+span.sheet-stat-text-force-head {
+  margin-top: 1em;
+  margin-left: 45px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
 
 
 /*--- Characteristics Section ---*/
