@@ -6,7 +6,7 @@
     <div class="version-info1 flex-col">
       <text>Created by InquisitorTremayne V. 1.0.0</text>
     </div>
-
+<!--------------------------------  DICE POOL SECTION ------------------------->
     <div class="dice section">
       <h2 class="dice-pool-head">Dice Pool</h2> <!--- this whole section will need the dice roll integration with the API, rolling dice and the ability to reset the pool --->
         <div class="dice-inputs">
@@ -26,7 +26,7 @@
           <button class="reset-dice" type="roll" name="roll_reset_dice_pool"></button>
         </div>
     </div>
-
+<!-----------------------------CHARACTER INFO SECTION --------------------------->
     <div class="character-info section">
       <label>CHARACTER NAME:</label><input class="char-info-input" name="attr_character_name" type="text"/>
       <label>SPECIES:</label><select name='attr_species_list'>
@@ -132,7 +132,17 @@
       </select>
       <label>SPECIALIZATION:</label><input class="char-info-input" type="text" name="attr_specialization">
     </div>
+<!-------------------------------------------- INITIATIVE SECTION -------------------------------------------->
+    <div class="initiative section">
+      <span>Cool</span>
+      <textarea></textarea><!--this is for modifiers--->
+      <button type="roll" name="attr_initiative_cool"></button>
+      <span>Vigilance</span>
+      <textarea></textarea><!--this is for modifiers--->
+      <button type="roll" name="attr_initiative_cool"></button>
 
+    </div>
+<!-------------------------------------------- SHEET TABS SECTION -------------------------------------------->
     <div class="tabs section"><!--- need to make functional to switch to the other pages --->
       <button class="tab-button" type="action" name="act_character" >Character</button>
       <button class="tab-button"type="action" name="act_inventory" >Inventory</button>
@@ -142,7 +152,7 @@
     </div>
 
     <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'/>
-    
+<!------------------------------- CHARACTER STATS SECTION -------------------------------------->    
     <div class="stats section">
       <div class="soak-box">
         <span class="stat-text-soak-head">SOAK</span>
@@ -150,34 +160,34 @@
       </div>
       <div class="threshold-box">
         <span class="stat-text-head">WOUNDS</span>
-        <input class="wound-threshold-stat" type="number" name="attr_soak" max="60" min="-60" value="0">
-        <input class="wound-current-stat" type="number" name="attr_soak" max="60" min="-60" value="0">
+        <input class="wound-threshold-stat" type="number" name="attr_wound_threshold" max="60" min="-60" value="0">
+        <input class="wound-current-stat" type="number" name="attr_wound_current" max="60" min="-60" value="0">
         <span class="stat-text-foot">Threshold</span>
         <span class="stat-text-foot">Current</span>
       </div>
       <div class="threshold-box">
         <span class="stat-text-head">STRAIN</span>
-        <input class="strain-threshold-stat" type="number" name="attr_soak" max="60" min="-60" value="0">
-        <input class="strain-current-stat" type="number" name="attr_soak" max="60" min="-60" value="0">
+        <input class="strain-threshold-stat" type="number" name="attr_strain_threshold" max="60" min="-60" value="0">
+        <input class="strain-current-stat" type="number" name="attr_strain_current" max="60" min="-60" value="0">
         <span class="stat-text-foot">Threshold</span>
         <span class="stat-text-foot">Current</span>
       </div>
       <div class="threshold-box">
         <span class="stat-text-head">DEFENSE</span>
-        <input class="defense-ranged-stat" type="number" name="attr_soak" max="4" min="0" value="0">
-        <input class="defense-melee-stat" type="number" name="attr_soak" max="4" min="0" value="0">
+        <input class="defense-ranged-stat" type="number" name="attr_ranged_def" max="4" min="0" value="0">
+        <input class="defense-melee-stat" type="number" name="attr_melee_def" max="4" min="0" value="0">
         <span class="stat-text-foot">Threshold</span>
         <span class="stat-text-foot">Current</span>
       </div>
       <div class="threshold-box">
         <span class="stat-text-force-head">FORCE</span>
-        <input class="force-threshold-stat" type="number" name="attr_soak" max="10" min="0" value="0">
-        <input class="force-current-stat" type="number" name="attr_soak" max="10" min="0" value="0">
+        <input class="force-threshold-stat" type="number" name="attr_force_threshold" max="10" min="0" value="0">
+        <input class="force-current-stat" type="number" name="attr_force_current" max="10" min="0" value="0">
         <span class="stat-text-foot">Threshold</span>
         <span class="stat-text-foot">Current</span>
       </div>
     </div>
-
+<!---------------------------------- CHARACTERISTICS SECTION ----------------------------------------->
     <div class="characteristics flex-col">
       <label>Brawn </label><input type="number" name="attr_brn" max="7" min="0" value="2"/>
       <label>Agility </label><input type="number" name="attr_agi" max="7" min="0" value="2"/>
@@ -186,7 +196,7 @@
       <label>Willpower </label><input type="number" name="attr_wil" max="7" min="0" value="2"/>
       <label>Presence </label><input type="number" name="attr_pre" max="7" min="0" value="2"/>
     </div>
-
+<!-------------------------------------- GENERAL SKILLS SECTION ------------------------------------>
     <div class="general-skills section">
       <text>GENERAL SKILLS GO HERE</text>
     </div>
