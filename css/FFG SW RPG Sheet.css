@@ -7,7 +7,7 @@
   grid-template-rows: 25px 100px 30px 80px 60px 1fr 100px 100px;
   grid-template-areas:"info    info    infor   infor"
                       "dice    dice    char    char"
-                      "tabs    tabs    tabs    tabs"
+                      "init    init    tabs    tabs"
                       "stats   stats   stats   stats"
                       "attri   attri   attri   attri"
                       "skill   skill   skills  skills"
@@ -194,6 +194,14 @@ button[type="roll"].sheet-reset-dice{
   text-align: left;
 }
 
+/*--- Initiative Section CSS ---*/
+.sheet-initiative {
+  grid-area: init;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+
+}
 
 /*--- Tabs Section CSS ---*/
 
@@ -237,7 +245,7 @@ input.sheet-force-threshold-stat,
 input.sheet-force-current-stat {
   display: inline-grid;
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 15pt;
   margin-top: 5px;
   border: 1px transparent;
   background-color: transparent;
@@ -265,6 +273,7 @@ input.sheet-force-current-stat {
 span.sheet-stat-text-head {
   margin-top: 1em;
   margin-left: 3em;
+  margin-bottom: none;
   font-weight: bold;
   color: #FFFFFF;
 }
