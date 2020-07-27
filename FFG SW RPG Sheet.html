@@ -150,46 +150,51 @@
 <!------------------------------- CHARACTER STATS SECTION -------------------------------------->    
     <div class="stats section">
       <div class="soak-box">
-        <span class="stat-text-soak-head">SOAK</span>
         <input class="soak-stat" type="number" name="attr_soak" max="20" min="-5" value="0">
       </div>
-      <div class="threshold-box">
-        <span class="stat-text-head">WOUNDS</span>
+      <div class="wounds-box">
         <input class="wound-threshold-stat" type="number" name="attr_wound_threshold" max="60" min="-60" value="0">
         <input class="wound-current-stat" type="number" name="attr_wound_current" max="60" min="-60" value="0">
-        <span class="stat-text-foot">Threshold</span>
-        <span class="stat-text-foot">Current</span>
       </div>
-      <div class="threshold-box">
-        <span class="stat-text-head">STRAIN</span>
+      <div class="strain-box">
         <input class="strain-threshold-stat" type="number" name="attr_strain_threshold" max="60" min="-60" value="0">
         <input class="strain-current-stat" type="number" name="attr_strain_current" max="60" min="-60" value="0">
-        <span class="stat-text-foot">Threshold</span>
-        <span class="stat-text-foot">Current</span>
       </div>
-      <div class="threshold-box">
-        <span class="stat-text-head">DEFENSE</span>
+      <div class="defense-box">
         <input class="defense-ranged-stat" type="number" name="attr_ranged_def" max="4" min="0" value="0">
         <input class="defense-melee-stat" type="number" name="attr_melee_def" max="4" min="0" value="0">
-        <span class="stat-text-foot">Threshold</span>
-        <span class="stat-text-foot">Current</span>
       </div>
-      <div class="threshold-box">
-        <span class="stat-text-force-head">FORCE</span>
+      <div class="force-box">
         <input class="force-threshold-stat" type="number" name="attr_force_threshold" max="10" min="0" value="0">
         <input class="force-current-stat" type="number" name="attr_force_current" max="10" min="0" value="0">
-        <span class="stat-text-foot">Threshold</span>
-        <span class="stat-text-foot">Current</span>
       </div>
     </div>
 <!---------------------------------- CHARACTERISTICS SECTION ----------------------------------------->
     <div class="characteristics flex-col">
-      <label>Brawn </label><input type="number" name="attr_brn" max="7" min="0" value="2"/>
-      <label>Agility </label><input type="number" name="attr_agi" max="7" min="0" value="2"/>
-      <label>Intellect </label><input type="number" name="attr_int" max="7" min="0"value="2"/>
-      <label>Cunning </label><input type="number" name="attr_cun" max="7" min="0" value="2"/>
-      <label>Willpower </label><input type="number" name="attr_wil" max="7" min="0" value="2"/>
-      <label>Presence </label><input type="number" name="attr_pre" max="7" min="0" value="2"/>
+      <div class="ability-box">
+        <input class="ability-stat" type="number" name="attr_brn" max="7" min="0" value="2"/>
+        <label>BRAWN </label>
+      </div>
+      <div class="ability-box">
+        <input class="ability-stat" type="number" name="attr_agi" max="7" min="0" value="2"/>
+        <label>AGILITY </label>
+      </div>
+      <div class="ability-box">
+        <input class="ability-stat" type="number" name="attr_int" max="7" min="0" value="2"/>
+        <label>INTELLECT </label>
+      </div>
+      <div class="ability-box">
+        <input class="ability-stat" type="number" name="attr_cun" max="7" min="0" value="2"/>
+        <label>CUNNING </label>
+      </div>
+      <div class="ability-box">
+        <input class="ability-stat" type="number" name="attr_wil" max="7" min="0" value="2"/>
+        <label>WILLPOWER </label>
+      </div>
+      <div class="ability-box">
+        <input class="ability-stat" type="number" name="attr_pre" max="7" min="0" value="2"/>
+        <label>PRESENCE </label>
+      </div>
     </div>
 <!-------------------------------------- GENERAL SKILLS SECTION ------------------------------------>
     <div class="general-skills section">
