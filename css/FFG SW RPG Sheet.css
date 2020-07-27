@@ -4,7 +4,7 @@
   height: 900px;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25px 100px 40px 80px 60px 1fr 100px 100px;
+  grid-template-rows: 25px 100px 40px 80px 80px 1fr 100px 100px;
   grid-template-areas:"info    info    infor   infor"
                       "dice    dice    char    char"
                       "init    init    tabs    tabs"
@@ -307,7 +307,16 @@ input.sheet-force-current-stat {
 .sheet-characteristics {
   grid-area: attri;
   background-color: #9d927e;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  display: inline-grid;
+}
+
+.sheet-ability-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_small.png?raw=true);
+  background-position: center;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  padding: none;
 }
 
 /*--- General Skills CSS ---*/
