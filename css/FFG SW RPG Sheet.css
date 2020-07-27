@@ -238,8 +238,29 @@ button.sheet-init-roll {
   padding: none;
 }
 
-.sheet-threshold-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/threshold_box_small.png?raw=true);
+.sheet-wounds-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/wounds_box_small.png?raw=true);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: none;
+}
+
+.sheet-strain-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/strain_box_small.png?raw=true);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: none;
+}
+
+.sheet-defense-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/defense_box_small.png?raw=true);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: none;
+}
+
+.sheet-force-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/force_box_small.png?raw=true);
   background-position: left;
   background-repeat: no-repeat;
   padding: none;
@@ -257,7 +278,7 @@ input.sheet-force-current-stat {
   display: inline-grid;
   font-weight: bold;
   font-size: 15pt;
-  margin-top: 5px;
+  margin-top: 2em;
   border: 1px transparent;
   background-color: transparent;
 }
@@ -281,38 +302,15 @@ input.sheet-force-current-stat {
   text-align: left;
 }
 
-span.sheet-stat-text-head {
-  margin-top: 1em;
-  margin-left: 3em;
-  margin-bottom: none;
-  font-weight: bold;
-  color: #FFFFFF;
-}
-
-span.sheet-stat-text-soak-head {
-  margin-top: 1em;
-  margin-left: 48px;
-  font-weight: bold;
-  color: #FFFFFF;
-  font-size: 12px;
-}
-
-span.sheet-stat-text-force-head {
-  margin-top: 1em;
-  margin-left: 45px;
-  font-weight: bold;
-  color: #FFFFFF;
-  font-size: 12px;
-}
-
-
-/*--- Characteristics Section ---*/
+/*--- Characteristics CSS ---*/
 
 .sheet-characteristics {
   grid-area: attri;
   background-color: #9d927e;
+  grid-template-rows: repeat(6, 1fr);
 }
 
+/*--- General Skills CSS ---*/
 .sheet-general-skills {
   grid-area: skill;
   background-color: #dcddd9;
