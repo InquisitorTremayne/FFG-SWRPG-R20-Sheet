@@ -2,9 +2,9 @@
   display: grid;
   width: 800px;
   height: 900px;
-  grid-gap: 4px;
+  grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25px 100px 30px 80px 60px 1fr 100px 100px;
+  grid-template-rows: 25px 100px 40px 80px 60px 1fr 100px 100px;
   grid-template-areas:"info    info    infor   infor"
                       "dice    dice    char    char"
                       "init    init    tabs    tabs"
@@ -198,9 +198,20 @@ button[type="roll"].sheet-reset-dice{
 .sheet-initiative {
   grid-area: init;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: 75px 120px 50px;
+  grid-template-rows: 15px 15px;
+  grid-gap: 2px;
+}
 
+input.sheet-init-mod {
+  width: 120px;
+  height: 15px
+  border: 1px solid;
+  background-color: transparent;
+}
+
+button.sheet-init-roll {
+  background-color: white;
 }
 
 /*--- Tabs Section CSS ---*/
@@ -208,6 +219,7 @@ button[type="roll"].sheet-reset-dice{
 .sheet-tabs {
   grid-area: tabs;
   background-color: #848482;
+  padding-top: 7px;
 }
 
 /*--- Stats Section CSS ---*/
@@ -232,7 +244,6 @@ button[type="roll"].sheet-reset-dice{
   background-repeat: no-repeat;
   padding: none;
 }
-
 
 input.sheet-soak-stat,
 input.sheet-wound-threshold-stat,
@@ -283,6 +294,7 @@ span.sheet-stat-text-soak-head {
   margin-left: 48px;
   font-weight: bold;
   color: #FFFFFF;
+  font-size: 12px;
 }
 
 span.sheet-stat-text-force-head {
@@ -290,6 +302,7 @@ span.sheet-stat-text-force-head {
   margin-left: 45px;
   font-weight: bold;
   color: #FFFFFF;
+  font-size: 12px;
 }
 
 
