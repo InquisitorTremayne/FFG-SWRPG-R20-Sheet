@@ -29,7 +29,7 @@
 <!-----------------------------CHARACTER INFO SECTION --------------------------->
     <div class="character-info section">
       <label>CHARACTER NAME:</label><input class="char-info-input" name="attr_character_name" type="text"/>
-      <label>SPECIES:</label><select name='attr_species_list'>
+      <label>SPECIES:</label><select name='attr_species_list'><!--- need to update this list --->
           <option value=""></option>
           <option value="Aleena">Aleena</option>
           <option value="Anx">Anx</option>
@@ -99,8 +99,8 @@
           <option value="Whiphid">Whiphid</option>
           <option value="Wookiee">Wookiee</option>/8
           <option value="Xexto">Xexto</option>
-          <option value="Zabrak">Zabrak</option></select><!--- need to update this list --->
-      <label>CAREER:</label><select name="attr_career_list">
+          <option value="Zabrak">Zabrak</option></select>
+      <label>CAREER:</label><select name="attr_career_list"><!--- need to update this list --->
         <option value=""></option>
         <optgroup label="Edge of the Empire">
           <option value="Bounty Hunter">Bounty Hunter</option>
@@ -126,31 +126,26 @@
           <option value="Sentinel">Sentinel</option>
           <option value="Warrior">Warrior</option>
         </optgroup>
-        <optgroup label="All">
-          <option value="Universal">Universal</option>
-        </optgroup><!--- need to update this list --->
       </select>
       <label>SPECIALIZATION:</label><input class="char-info-input" type="text" name="attr_specialization">
     </div>
 <!-------------------------------------------- INITIATIVE SECTION -------------------------------------------->
     <div class="initiative section">
       <span>Cool</span>
-      <textarea></textarea><!--this is for modifiers--->
+      <input class="init-mod" type="text" name="attr_init_mod">
       <button type="roll" name="attr_initiative_cool"></button>
       <span>Vigilance</span>
-      <textarea></textarea><!--this is for modifiers--->
-      <button type="roll" name="attr_initiative_cool"></button>
-
+      <input class="init-mod" type="text" name="attr_init_mod">
+      <button class="init-roll" type="roll" name="attr_initiative_cool"></button>
     </div>
 <!-------------------------------------------- SHEET TABS SECTION -------------------------------------------->
     <div class="tabs section"><!--- need to make functional to switch to the other pages --->
       <button class="tab-button" type="action" name="act_character" >Character</button>
+      <button class="tab-button" type="action" name="act_bio" >Bio</button>
       <button class="tab-button"type="action" name="act_inventory" >Inventory</button>
-      <button class="tab-button" type="action" name="act_abilities" >Abilities</button>
       <button class="tab-button" type="action" name="act_log" >Log</button>
       <button class="tab-button" type="action" name="act_settings" >Settings</button>
     </div>
-
     <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'/>
 <!------------------------------- CHARACTER STATS SECTION -------------------------------------->    
     <div class="stats section">
