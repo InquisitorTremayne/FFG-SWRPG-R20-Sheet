@@ -143,7 +143,7 @@
       <button class="tab-button" type="action" name="act_character" >Character</button>
       <button class="tab-button" type="action" name="act_bio" >Bio</button>
       <button class="tab-button"type="action" name="act_inventory" >Inventory</button>
-      <button class="tab-button" type="action" name="act_log" >Log</button>
+      <button class="tab-button" type="action" name="act_journal" >Journal</button>
       <button class="tab-button" type="action" name="act_settings" >Settings</button>
     </div>
     <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'/>
@@ -173,52 +173,46 @@
     <div class="characteristics flex-col">
       <div class="ability-box">
         <input class="ability-stat" type="number" name="attr_brn" max="7" min="0" value="2"/>
-        <label>BRAWN </label>
       </div>
       <div class="ability-box">
         <input class="ability-stat" type="number" name="attr_agi" max="7" min="0" value="2"/>
-        <label>AGILITY </label>
       </div>
       <div class="ability-box">
         <input class="ability-stat" type="number" name="attr_int" max="7" min="0" value="2"/>
-        <label>INTELLECT </label>
       </div>
       <div class="ability-box">
         <input class="ability-stat" type="number" name="attr_cun" max="7" min="0" value="2"/>
-        <label>CUNNING </label>
       </div>
       <div class="ability-box">
         <input class="ability-stat" type="number" name="attr_wil" max="7" min="0" value="2"/>
-        <label>WILLPOWER </label>
       </div>
       <div class="ability-box">
         <input class="ability-stat" type="number" name="attr_pre" max="7" min="0" value="2"/>
-        <label>PRESENCE </label>
       </div>
     </div>
 <!-------------------------------------- GENERAL SKILLS SECTION ------------------------------------>
     <div class="general-skills section">
       <text>GENERAL SKILLS GO HERE</text>
     </div>
-
+<!-------------------------------------- GENERAL SKILLS SECTION ------------------------------------>
     <div class="other-skills section">
       <text>OTHER SKILLS GO HERE</text>
     </div>
-
+<!-------------------------------------- WEAPONS SECTION ------------------------------------>
     <div class="weapons section flex-col">
       <text>WEAPONS GO HERE</text>
       <fieldset class="repeating_power">
           <input name="attr_power" type="text" />
       </fieldset>
     </div>
-
+<!-------------------------------------- TALENTS SECTION ------------------------------------>
     <div class="talents section flex-col">
       <text>TALENTS GO HERE</text>
       <fieldset class="repeating_talent">
           <input name="attr_talent" type="text" />
       </fieldset>
     </div>
-
+<!-------------------------------------- FORCE POWERS SECTION ------------------------------------>
     <div class="powers section flex-col">
       <text>FORCE POWERS GO HERE</text>
       <fieldset class="repeating_power">
@@ -228,18 +222,28 @@
 </div>
 
 <div class='sheet-inventory'>
-    <h2>Journal/Notes</h2>
-    <span>Journal/Notes Stuff Goes here</span> 
+    <h2>Bio</h2>
+    <span>Bio Stuff Goes here</span> 
 </div>
 
 <div class='sheet-abilities'>
-    <h2>Config/Settings</h2>
-    <span>Sheet Config/Settings goes here</span> 
+    <h2>Inventory</h2>
+    <span>Inventory goes here</span> 
+</div>
+
+<div class='sheet-abilities'>
+    <h2>Journal</h2>
+    <span>Journal goes here</span> 
+</div>
+
+<div class='sheet-abilities'>
+    <h2>Settings</h2>
+    <span>Settings goes here</span> 
 </div>
 
 <!----- SCRIPTS ---->
 <script type="text/worker">
-    const buttonlist = ["character","journal","configuration"];
+    const buttonlist = ["character","bio","inventory","journal","settings"];
     buttonlist.forEach(button => {
         on(`clicked:${button}`, function() {
             setAttrs({
