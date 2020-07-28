@@ -278,7 +278,7 @@ input.sheet-force-current-stat {
   display: inline-grid;
   font-weight: bold;
   font-size: 15pt;
-  margin-top: 2em;
+  margin-top: 22px;
   border: 1px transparent;
   background-color: transparent;
 }
@@ -319,27 +319,41 @@ input.sheet-force-current-stat {
   padding: none;
 }
 
+.sheet-ability-stat {
+  font-weight: bold;
+  font-size: 20pt;
+  margin-top: 15px;
+  margin-left: 28px;
+  border: 1px transparent;
+  background-color: transparent;
+  text-align: center;
+}
+
 /*--- General Skills CSS ---*/
 .sheet-general-skills {
   grid-area: skill;
   background-color: #dcddd9;
 }
 
+/*--- Other Skills CSS ---*/
 .sheet-other-skills {
   grid-area: skills;
   background-color: #dcddd9;
 }
 
+/*--- Weapons CSS ---*/
 .sheet-weapons {
   grid-area: weapon;
   background-color: #f7f7f5;
 }
 
+/*--- Talents CSS ---*/
 .sheet-talents {
   grid-area: talent;
   background-color: #caccc9;
 }
 
+/*--- Powers CSS ---*/
 .sheet-powers {
   grid-area: power;
   background-color: #caccc9;
