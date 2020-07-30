@@ -4,7 +4,7 @@
   height: 900px;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25px 100px 40px 80px 80px 1fr 100px 100px;
+  grid-template-rows: 25px 100px 40px 80px 80px 375px 100px 100px;
   grid-template-areas:"info    info    infor   infor"
                       "dice    dice    char    char"
                       "init    init    tabs    tabs"
@@ -275,7 +275,6 @@ input.sheet-defense-ranged-stat,
 input.sheet-defense-melee-stat,
 input.sheet-force-threshold-stat,
 input.sheet-force-current-stat {
-  display: inline-grid;
   font-weight: bold;
   font-size: 15pt;
   margin-top: 22px;
@@ -311,8 +310,48 @@ input.sheet-force-current-stat {
   display: inline-grid;
 }
 
-.sheet-ability-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_small.png?raw=true);
+.sheet-brawn-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_brawn_small.png?raw=true);
+  background-position: center;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  padding: none;
+}
+
+.sheet-agility-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_agility_small.png?raw=true);
+  background-position: center;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  padding: none;
+}
+
+.sheet-intellect-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_intellect_small.png?raw=true);
+  background-position: center;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  padding: none;
+}
+
+.sheet-cunning-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_cunning_small.png?raw=true);
+  background-position: center;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  padding: none;
+}
+
+.sheet-willpower-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_willpower_small.png?raw=true);
+  background-position: center;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  padding: none;
+}
+
+.sheet-presence-box {
+  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_presence_small.png?raw=true);
   background-position: center;
   background-size: 80px;
   background-repeat: no-repeat;
@@ -329,10 +368,33 @@ input.sheet-force-current-stat {
   text-align: center;
 }
 
+.sheet-ability-label {
+  font-size: 12pt;
+  color: #FFFFFF;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
 /*--- General Skills CSS ---*/
 .sheet-general-skills {
   grid-area: skill;
+  display: grid;
   background-color: #dcddd9;
+  grid-template-columns: 100px 75px 50px 75px 75px;
+  grid-template-rows: 10px;
+  grid-gap: 5px;
+  border: 1px solid;
+}
+
+.sheet-skill-row {
+  display: grid;
+  grid-template-columns: 100px 75px 50px 75px 75px;
+  grid-template-rows: 10px;
+  border-bottom: 1px dotted;  /*--------------- look at the dice pool section for input size -----------------*/
+}
+
+input.sheet-skill-modbox {
+  font-size: 8pt;
 }
 
 /*--- Other Skills CSS ---*/
