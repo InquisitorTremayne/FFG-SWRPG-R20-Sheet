@@ -133,7 +133,7 @@
     <div class="initiative section">
       <span>Cool</span>
       <input class="init-mod" type="text" name="attr_init_mod">
-      <button type="roll" name="attr_initiative_cool"></button>
+      <button class="init-roll" type="roll" name="attr_initiative_cool"></button>
       <span>Vigilance</span>
       <input class="init-mod" type="text" name="attr_init_mod">
       <button class="init-roll" type="roll" name="attr_initiative_cool"></button>
@@ -148,7 +148,7 @@
     </div>
     <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'/>
 <!------------------------------- CHARACTER STATS SECTION -------------------------------------->    
-    <div class="stats section">
+    <div class="stats section"><!------- these input boxes are all too big for some reason --------->
       <div class="soak-box">
         <input class="soak-stat" type="number" name="attr_soak" max="20" min="-5" value="0">
       </div>
@@ -170,31 +170,62 @@
       </div>
     </div>
 <!---------------------------------- CHARACTERISTICS SECTION ----------------------------------------->
-    <div class="characteristics flex-col">
-      <div class="ability-box">
-        <input class="ability-stat" type="number" name="attr_brn" max="7" min="0" value="2"/>
+    <div class="characteristics flex-col"><!------- these input boxes are all too big for some reason --------->
+      <div class="brawn-box">
+        <input class="ability-stat" type="number" name="attr_brawn" max="7" min="0" value="2"/>
       </div>
-      <div class="ability-box">
+      <div class="agility-box">
         <input class="ability-stat" type="number" name="attr_agi" max="7" min="0" value="2"/>
       </div>
-      <div class="ability-box">
+      <div class="intellect-box">
         <input class="ability-stat" type="number" name="attr_int" max="7" min="0" value="2"/>
       </div>
-      <div class="ability-box">
+      <div class="cunning-box">
         <input class="ability-stat" type="number" name="attr_cun" max="7" min="0" value="2"/>
       </div>
-      <div class="ability-box">
+      <div class="willpower-box">
         <input class="ability-stat" type="number" name="attr_wil" max="7" min="0" value="2"/>
       </div>
-      <div class="ability-box">
+      <div class="presence-box">
         <input class="ability-stat" type="number" name="attr_pre" max="7" min="0" value="2"/>
       </div>
     </div>
 <!-------------------------------------- GENERAL SKILLS SECTION ------------------------------------>
     <div class="general-skills section">
-      <text>GENERAL SKILLS GO HERE</text>
+      <div>
+        <label>GENERAL SKILLS</label>
+      </div>
+      <div>
+        <label>CAREER?</label>
+      </div>
+      <div>
+        <label>RANKS</label>
+      </div>
+      <div>
+        <label>ABILITY</label>
+      </div>
+      <div>
+        <label>MODIFIERS</label>
+      </div>
+      <div class="skill-row">  
+        <div class="skill-astrogation">
+          <label>Astrogation (Int)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-checkbox" type="checkbox" name="" value="1">
+        </div>
+        <div>
+          <input class="skill-rankbox" type="number" name="" max="6" min="0">
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name=""><!---------- this needs to be the section that shows the graphics for the relevant skill -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name=""><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+      </div>    
     </div>
-<!-------------------------------------- GENERAL SKILLS SECTION ------------------------------------>
+<!-------------------------------------- COMBAT SKILLS SECTION ------------------------------------>
     <div class="other-skills section">
       <text>OTHER SKILLS GO HERE</text>
     </div>
