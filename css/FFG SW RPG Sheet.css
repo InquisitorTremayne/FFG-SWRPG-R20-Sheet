@@ -1,10 +1,10 @@
 .sheet-main {
   display: grid;
   width: 800px;
-  height: 900px;
+  height: auto;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25px 100px 40px 80px 80px 375px 100px 100px;
+  grid-template-rows: 25px 100px 40px 80px 80px auto auto auto;
   grid-template-areas:"info    info    infor   infor"
                       "dice    dice    char    char"
                       "init    init    tabs    tabs"
@@ -38,6 +38,12 @@ label {
 
 h2 {
   font-size: 14pt;
+}
+
+span {
+  color: #51634b;
+  font-size: 8pt;
+  font-weight: bold;
 }
 
 .sheet-char-top-section-float {
@@ -358,7 +364,7 @@ input.sheet-force-current-stat {
   padding: none;
 }
 
-.sheet-ability-stat {
+input.sheet-ability-stat {
   font-weight: bold;
   font-size: 20pt;
   margin-top: 15px;
@@ -368,39 +374,56 @@ input.sheet-force-current-stat {
   text-align: center;
 }
 
-.sheet-ability-label {
-  font-size: 12pt;
-  color: #FFFFFF;
-  padding-top: 10px;
-  margin-left: 20px;
-}
 
 /*--- General Skills CSS ---*/
 .sheet-general-skills {
   grid-area: skill;
   display: grid;
   background-color: #dcddd9;
-  grid-template-columns: 100px 75px 50px 75px 75px;
-  grid-template-rows: 10px;
-  grid-gap: 5px;
+  grid-template-columns: 150px 120px 100px;
   border: 1px solid;
 }
 
 .sheet-skill-row {
   display: grid;
-  grid-template-columns: 100px 75px 50px 75px 75px;
-  grid-template-rows: 10px;
-  border-bottom: 1px dotted;  /*--------------- look at the dice pool section for input size -----------------*/
+  grid-template-columns: 150px 120px 100px;
+  grid-template-rows: 18px;
+}
+
+input.sheet-skill-dicebox {
+  font-size: 10pt
+  width: 100px;
+  height: 16px;
 }
 
 input.sheet-skill-modbox {
   font-size: 8pt;
+  width: 100px;
+  height: 16px;
+  background-color: #dcddd9;
 }
 
 /*--- Other Skills CSS ---*/
 .sheet-other-skills {
   grid-area: skills;
+  display: grid;
   background-color: #dcddd9;
+  grid-gap: 2px;
+}
+
+.sheet-combat-skills {
+  display: grid;
+  border: 1px solid;
+}
+
+.sheet-knowledge-skills {
+  display: grid;
+  border: 1px solid;
+}
+
+.sheet-custom-skills {
+  display: grid;
+  border: 1px solid;
 }
 
 /*--- Weapons CSS ---*/
