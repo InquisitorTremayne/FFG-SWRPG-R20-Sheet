@@ -141,7 +141,7 @@
 <!-------------------------------------------- SHEET TABS SECTION -------------------------------------------->
     <div class="tabs section"><!--- need to make functional to switch to the other pages --->
       <button class="tab-button" type="action" name="act_character" >Character</button>
-      <button class="tab-button" type="action" name="act_bio" >Bio</button>
+      <button class="tab-button" type="action" name="act_abilities" >Abilities</button>
       <button class="tab-button"type="action" name="act_inventory" >Inventory</button>
       <button class="tab-button" type="action" name="act_journal" >Journal</button>
       <button class="tab-button" type="action" name="act_settings" >Settings</button>
@@ -193,41 +193,226 @@
 <!-------------------------------------- GENERAL SKILLS SECTION ------------------------------------>
     <div class="general-skills section">
       <div>
-        <label>GENERAL SKILLS</label>
+        <span>GENERAL SKILLS</span>
       </div>
       <div>
-        <label>CAREER?</label>
+        <span>DICE</span>
       </div>
       <div>
-        <label>RANKS</label>
-      </div>
-      <div>
-        <label>ABILITY</label>
-      </div>
-      <div>
-        <label>MODIFIERS</label>
+        <span>MODIFIERS</span>
       </div>
       <div class="skill-row">  
         <div class="skill-astrogation">
           <label>Astrogation (Int)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
         </div>
         <div>
-          <input class="skill-checkbox" type="checkbox" name="" value="1">
+          <input class="skill-dicebox" type="hidden" name="attr_astro_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
         </div>
         <div>
-          <input class="skill-rankbox" type="number" name="" max="6" min="0">
+          <input class="skill-modbox" type="text" name="attr_astro_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-athletics">
+          <label>Athletics (Br)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
         </div>
         <div>
-          <input class="skill-dicebox" type="hidden" name=""><!---------- this needs to be the section that shows the graphics for the relevant skill -------->
+          <input class="skill-dicebox" type="hidden" name="attr_athletics_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
         </div>
         <div>
-          <input class="skill-modbox" type="text" name=""><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+          <input class="skill-modbox" type="text" name="attr_atheltics_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
         </div>
-      </div>    
+        <div class="skill-charm">
+          <label>Charm (Pr)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_charm_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_charm_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-coercion">
+          <label>Coercion (Will)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_coercion_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_coercion_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-computers">
+          <label>Computers (Int)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_computers_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_computers_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-cool">
+          <label>Cool (Pr)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_cool_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_cool_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-coordination">
+          <label>Coordination (Ag)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_coordination_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_coordination_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-deception">
+          <label>Deception (Cun)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_deception_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_deception_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-discipline">
+          <label>Discipline (Will)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_discipline_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_discipline_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-leadership">
+          <label>Leadership (Pr)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_leader_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_leader_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-mechanics">
+          <label>Mechanics (Int)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_mechanics_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_mechanics_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-medicine">
+          <label>Medicine (Int)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_medicine_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_medicine_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-negotiation">
+          <label>Negotiation (Pr)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_negotiation_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_negotiation_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-perception">
+          <label>Perception (Cun)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_perception_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_perception_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-pilot-planetary">
+          <label>Piloting - Planetary (Ag)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_pilot_planet_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_pilot_planet_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-pilot-space">
+          <label>Piloting - Space (Ag)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_pilot_space_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_pilot_space_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-resilience">
+          <label>Resilience (Br)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_resilience_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_resilience_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-skulduggery">
+          <label>Skulduggery (Cun)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_skulduggery_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_skulduggery_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-stealth">
+          <label>Stealth (Ag)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_stealth_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_stealth_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-streetwise">
+          <label>Streetwise (Cun)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_streetwise_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_streetwise_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-survival">
+          <label>Survival (Cun)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_survival_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_survival_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+        <div class="skill-vigilance">
+          <label>Vigilance (Will)</label><!------------- players should be able to click the skill text to roll their skill check, like the 5e sheet -------------->
+        </div>
+        <div>
+          <input class="skill-dicebox" type="hidden" name="attr_vigilance_dice"><!---------- this needs to be the section that shows the graphics for the relevant skill, taken from the Abilities tab -------->
+        </div>
+        <div>
+          <input class="skill-modbox" type="text" name="attr_vigilance_skill_mods"><!---------- this is the input box for modifiers that needs to modify the dice roll ------->
+        </div>
+      </div>
     </div>
-<!-------------------------------------- COMBAT SKILLS SECTION ------------------------------------>
+<!-------------------------------------- OTHER SKILLS SECTION ------------------------------------>
     <div class="other-skills section">
-      <text>OTHER SKILLS GO HERE</text>
+      <div class="combat-skills section">
+        <text>combat skills go here</text>
+      </div>
+      <div class="knowledge-skills section">
+        <text>knowledge skills go here</text>
+      </div>
+      <div class="custom-skills section">
+        <text>custom skills go here</text>
+      </div>
     </div>
 <!-------------------------------------- WEAPONS SECTION ------------------------------------>
     <div class="weapons section flex-col">
