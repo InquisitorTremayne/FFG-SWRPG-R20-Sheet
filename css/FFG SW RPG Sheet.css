@@ -46,16 +46,6 @@ span {
   font-weight: bold;
 }
 
-.sheet-char-top-section-float {
-  position: fixed;
-  top: 20px;
-}
-
-.sheet-tab-button {
-  background-color: #761213;
-  color: #c8bcab;
-}
-
 .sheet-section {
     padding: 2px;
 }
@@ -80,7 +70,7 @@ span {
 
 .sheet-dice {
   grid-area: dice;
-  background-color: #354456;
+  background-color: #9d9d9d;
 }
 
 .sheet-dice-inputs {
@@ -207,6 +197,8 @@ button[type="roll"].sheet-reset-dice{
   grid-template-columns: 75px 120px 50px;
   grid-template-rows: 15px 15px;
   grid-gap: 2px;
+  background-color: #eeeeee;
+  border: 1px solid;
 }
 
 input.sheet-init-mod {
@@ -228,48 +220,17 @@ button.sheet-init-roll {
   padding-top: 7px;
 }
 
+.sheet-tab-button {
+  background-color: #ffffff;
+}
+
 /*--- Stats Section CSS ---*/
 
 .sheet-stats {
   grid-area: stats;
-  background-color: #72cddc;
+  background-color: #bfbfbf;
   display: inline-grid;
   grid-template-columns: repeat(5, 1fr);
-}
-
-.sheet-soak-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/soak_box_small.png?raw=true);
-  background-position: left;
-  background-repeat: no-repeat;
-  padding: none;
-}
-
-.sheet-wounds-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/wounds_box_small.png?raw=true);
-  background-position: left;
-  background-repeat: no-repeat;
-  padding: none;
-}
-
-.sheet-strain-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/strain_box_small.png?raw=true);
-  background-position: left;
-  background-repeat: no-repeat;
-  padding: none;
-}
-
-.sheet-defense-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/defense_box_small.png?raw=true);
-  background-position: left;
-  background-repeat: no-repeat;
-  padding: none;
-}
-
-.sheet-force-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/force_box_small.png?raw=true);
-  background-position: left;
-  background-repeat: no-repeat;
-  padding: none;
 }
 
 input.sheet-soak-stat,
@@ -311,57 +272,9 @@ input.sheet-force-current-stat {
 
 .sheet-characteristics {
   grid-area: attri;
-  background-color: #9d927e;
+  background-color: #5e5e5e;
   grid-template-columns: repeat(6, 1fr);
   display: inline-grid;
-}
-
-.sheet-brawn-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_brawn_small.png?raw=true);
-  background-position: center;
-  background-size: 80px;
-  background-repeat: no-repeat;
-  padding: none;
-}
-
-.sheet-agility-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_agility_small.png?raw=true);
-  background-position: center;
-  background-size: 80px;
-  background-repeat: no-repeat;
-  padding: none;
-}
-
-.sheet-intellect-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_intellect_small.png?raw=true);
-  background-position: center;
-  background-size: 80px;
-  background-repeat: no-repeat;
-  padding: none;
-}
-
-.sheet-cunning-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_cunning_small.png?raw=true);
-  background-position: center;
-  background-size: 80px;
-  background-repeat: no-repeat;
-  padding: none;
-}
-
-.sheet-willpower-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_willpower_small.png?raw=true);
-  background-position: center;
-  background-size: 80px;
-  background-repeat: no-repeat;
-  padding: none;
-}
-
-.sheet-presence-box {
-  background-image: url(https://github.com/InquisitorTremayne/FFG-SWRPG-R20-Sheet/blob/master/images/Stat%20Block_presence_small.png?raw=true);
-  background-position: center;
-  background-size: 80px;
-  background-repeat: no-repeat;
-  padding: none;
 }
 
 input.sheet-ability-stat {
@@ -379,7 +292,7 @@ input.sheet-ability-stat {
 .sheet-general-skills {
   grid-area: skill;
   display: grid;
-  background-color: #dcddd9;
+  background-color: #dddddd;
   grid-template-columns: 150px 120px 100px;
   border: 1px solid;
 }
@@ -407,7 +320,7 @@ input.sheet-skill-modbox {
 .sheet-other-skills {
   grid-area: skills;
   display: grid;
-  background-color: #dcddd9;
+  background-color: #dddddd;
   grid-gap: 2px;
 }
 
@@ -429,20 +342,72 @@ input.sheet-skill-modbox {
 /*--- Weapons CSS ---*/
 .sheet-weapons {
   grid-area: weapon;
-  background-color: #f7f7f5;
+  background-color: #f6f6f6;
 }
 
 /*--- Talents CSS ---*/
 .sheet-talents {
   grid-area: talent;
-  background-color: #caccc9;
+  background-color: #dddddd;
 }
 
 /*--- Powers CSS ---*/
 .sheet-powers {
   grid-area: power;
-  background-color: #caccc9;
+  background-color: #dddddd;
+}
+
+/*---------------- ABILITIES SHEET CSS ------------------*/
+.sheet-abilities {
+  display: grid;
+  width: 800px;
+  height: auto;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 120px 120px 120px 120px auto auto auto;
+  grid-template-areas: "moti moti desc"
+                       "obli obli desc"
+                       "duty duty blank"
+                       "mora mora blank"
+                       "tale tale tale"
+                       "forc forc forc"
+                       "skil skil skil";
 }
 
 
+/*---------------- INVENTORY SHEET CSS ------------------*/
+.sheet-inventory {
+  display: grid;
+  width: 800px;
+  height: auto;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 150px 200px 100px;
+  grid-template-areas: "cred encu blank"
+                       "arms arms arms"
+                       "gear gear gear"
+                       "valu valu valu";
+}
 
+
+/*---------------- JOURNAL SHEET CSS ------------------*/
+.sheet-journal {
+  display: grid;
+  width: 800px;
+  height: auto;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px;
+}
+
+
+/*---------------- SETTINGS SHEET CSS ------------------*/
+.sheet-settings {
+  display: grid;
+  width: 800px;
+  height: auto;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: ;
+  grid-template-areas: "";
+}
