@@ -380,14 +380,8 @@ input.sheet-ability-stat {
   grid-area: skill;
   display: grid;
   background-color: #dcddd9;
-  grid-template-columns: 150px 120px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   border: 1px solid;
-}
-
-.sheet-skill-row {
-  display: grid;
-  grid-template-columns: 150px 120px 100px;
-  grid-template-rows: 18px;
 }
 
 input.sheet-skill-dicebox {
@@ -414,34 +408,48 @@ input.sheet-skill-modbox {
 .sheet-combat-skills {
   display: grid;
   border: 1px solid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .sheet-knowledge-skills {
   display: grid;
   border: 1px solid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .sheet-custom-skills {
   display: grid;
   border: 1px solid;
+  grid-template-columns: 10px 1fr 1fr 1fr 1fr;
 }
 
 /*--- Weapons CSS ---*/
 .sheet-weapons {
   grid-area: weapon;
+  display: grid;
   background-color: #f7f7f5;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 10px;
+}
+
+.sheet-repeating_weapon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 10px;
 }
 
 /*--- Talents CSS ---*/
 .sheet-talents {
   grid-area: talent;
+  display: grid;
   background-color: #caccc9;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*--- Powers CSS ---*/
 .sheet-powers {
   grid-area: power;
+  display: grid;
   background-color: #caccc9;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 
