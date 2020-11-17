@@ -380,8 +380,9 @@ input.sheet-ability-stat {
   grid-area: skill;
   display: grid;
   background-color: #dcddd9;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 125px 50px 110px 125px;
   border: 1px solid;
+  grid-gap: none;
 }
 
 input.sheet-skill-dicebox {
@@ -397,6 +398,33 @@ input.sheet-skill-modbox {
   background-color: #dcddd9;
 }
 
+input.sheet-astro-rank-input,
+input.sheet-athlet-rank-input,
+input.sheet-charm-rank-input,
+input.sheet-coerc-rank-input,
+input.sheet-comp-rank-input,
+input.sheet-cool-rank-input,
+input.sheet-coord-rank-input,
+input.sheet-decep-rank-input,
+input.sheet-disci-rank-input,
+input.sheet-lead-rank-input,
+input.sheet-mech-rank-input,
+input.sheet-medi-rank-input,
+input.sheet-negoti-rank-input,
+input.sheet-percep-rank-input,
+input.sheet-pilot-planet-rank-input,
+input.sheet-pilot-space-rank-input,
+input.sheet-resil-rank-input,
+input.sheet-skull-rank-input,
+input.sheet-steal-rank-input,
+input.sheet-street-rank-input,
+input.sheet-surv-rank-input,
+input.sheet-vigil-rank-input {
+  font-size: 10pt;
+  width: 12px;
+  height: 14px;
+}
+
 /*--- Other Skills CSS ---*/
 .sheet-other-skills {
   grid-area: skills;
@@ -408,20 +436,78 @@ input.sheet-skill-modbox {
 .sheet-combat-skills {
   display: grid;
   border: 1px solid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 125px 50px 110px 125px;
+}
+
+input.sheet-brawl-rank-input,
+input.sheet-gun-rank-input,
+input.sheet-lightsaber-rank-input,
+input.sheet-melee-rank-input,
+input.sheet-rlight-rank-input,
+input.sheet-rheavy-rank-input {
+  font-size: 10pt;
+  width: 12px;
+  height: 14px;
+}
+
+select.sheet-lightsaber-skill-select {
+  size: 10pt;
+  width: 100px;
+  height: 25px;
 }
 
 .sheet-knowledge-skills {
   display: grid;
   border: 1px solid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 125px 50px 110px 125px;
+}
+
+input.sheet-core-worlds-rank-input,
+input.sheet-education-rank-input,
+input.sheet-lore-rank-input,
+input.sheet-outer-rim-rank-input,
+input.sheet-underworld-rank-input,
+input.sheet-warfare-rank-input,
+input.sheet-xenology-rank-input {
+  font-size: 10pt;
+  width: 12px;
+  height: 14px;
 }
 
 .sheet-custom-skills {
   display: grid;
   border: 1px solid;
-  grid-template-columns: 10px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 25px 100px 50px 110px 125px;
 }
+
+input.sheet-custom-skill1-name,
+input.sheet-custom-skill2-name,
+input.sheet-custom-skill3-name,
+input.sheet-custom-skill4-name,
+input.sheet-custom-skill5-name {
+  font-size: 10pt;
+  width: 100px;
+  background-color: transparent;
+  border-bottom: 1px solid;
+  height: 25px;
+}
+
+input.sheet-custom-skill1-rank-input,
+input.sheet-custom-skill2-rank-input,
+input.sheet-custom-skill3-rank-input,
+input.sheet-custom-skill4-rank-input,
+input.sheet-custom-skill5-rank-input {
+  font-size: 10pt;
+  width: 12px;
+  height: 14px;
+}
+
+select.sheet-custom-skill-attri-list {
+  size: 10pt;
+  width: 100px;
+  height: 25px;
+}
+
 
 /*--- Weapons CSS ---*/
 .sheet-weapons {
