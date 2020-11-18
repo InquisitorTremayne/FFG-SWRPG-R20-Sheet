@@ -813,27 +813,27 @@
       <div>
         <span>SPECIAL</span>
       </div>
-      <fieldset class="repeating_weapon">
-          <button type="roll"></button>
-          <input name="attr_weapon_name" type="text" />
-          <select name='attr_weapon_skill_list'>
+      <fieldset class="repeating-weapon">
+        <div><button type="roll"></button></div><!--- needs to roll template to include all weapon information and skill dice --->
+        <div><input class="repweapon-name" name="attr_repweapon_name" type="text" /></div>
+        <div><select class="repweapon-skill" name='attr_repweapon_skill_list'>
             <option value="Brawl">Brawl</option>
             <option value="Gunnery">Gunner</option>
             <option value="Lightsaber">Lightsaber</option>
             <option value="Melee">Melee</option>
             <option value="Ranged - Light">Ranged - Light</option>
             <option value="Ranged - Heavy">Ranged - Heavy</option>
-          </select>
-          <input class= "weapon-dmg-input" type="number" name="weapon_dmg" max="50" min="0" value="0">
-          <select name='attr_weapon_range_list'>
+          </select></div>
+        <div><input class= "repweapon-dmg-input" type="number" name="repweapon_dmg" max="50" min="0" value="0" /></div>
+        <div><select class="repweapon-range" name='attr_repweapon_range_list'>
             <option value="Engaged">Engaged</option>
             <option value="Short">Short</option>
             <option value="Medium">Medium</option>
             <option value="Long">Long</option>
             <option value="Extreme">Extreme</option>
-          </select>
-          <input class= "weapon-crit-input" type="number" name="weapon_crit" max="10" min="0" value="0">
-          <input name="attr_weapon_special" type="text" />
+          </select></div>
+        <div><input class= "repweapon-crit-input" type="number" name="repweapon_crit" max="10" min="0" value="0" /></div>
+        <div><input class="repweapon-special" name="attr_repweapon_special" type="text" /></div>
       </fieldset>
     </div>
 <!-------------------------------------- TALENTS SECTION ------------------------------------>
