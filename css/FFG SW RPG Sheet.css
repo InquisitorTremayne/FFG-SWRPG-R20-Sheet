@@ -64,6 +64,7 @@ span {
   display: flex;
 }
 
+
 /*------------- Main Sheet-Section CSS -------------*/
 
 .sheet-version-info {
@@ -514,12 +515,61 @@ select.sheet-custom-skill-attri-list {
   grid-area: weapon;
   display: grid;
   background-color: #f7f7f5;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 10px;
+  grid-template-columns: 30px 155px 130px 60px 100px 60px 190px;
+  grid-template-rows: auto;
 }
 
-.sheet-repeating_weapon {
+.sheet-repeating-weapon {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 10px;
+  grid-template-columns: 30px 155px 130px 60px 100px 60px 190px;
+}
+
+input.sheet-repweapon-name {
+  font-size: 10pt;
+  width: 155px;
+  background-color: transparent;
+  border-bottom: 1px solid;
+  height: 25px;
+}
+
+select.sheet-repweapon-skill {
+  font-size: 10pt;
+  width: 130px;
+  background-color: transparent;
+  border-bottom: 1px solid;
+  height: 25px;
+}
+
+input.sheet-repweapon-dmg-input {
+  font-size: 10pt;
+  width: 60px;
+  background-color: transparent;
+  border-bottom: 1px solid;
+  height: 25px;
+}
+
+select.sheet-repweapon-range {
+  font-size: 10pt;
+  width: 100px;
+  background-color: transparent;
+  border-bottom: 1px solid;
+  height: 25px;
+}
+
+input.sheet-repweapon-crit-input {
+  font-size: 10pt;
+  width: 60px;
+  background-color: transparent;
+  border-bottom: 1px solid;
+  height: 25px;
+}
+
+input.sheet-repweapon-special {
+  font-size: 10pt;
+  width: 190px;
+  background-color: transparent;
+  border-bottom: 1px solid;
+  height: 25px;
 }
 
 /*--- Talents CSS ---*/
